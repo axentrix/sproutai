@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.566" height="51.844" viewBox="0 0 47.566 51.844">
+  <g id="investigation" transform="translate(1.074 1.09)">
+    <g id="Group_16569" data-name="Group 16569" transform="translate(6.025 14.576)">
+      <line id="Line_343" data-name="Line 343" x1="2.054" y1="12.076" transform="translate(0 2.242)" fill="none" stroke="#1db2a6" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_9863" data-name="Path 9863" d="M1121.7,331.5V328l2.266-.757a1.938,1.938,0,0,0,1.067-2.807l-3.529-6.206-30.169-5.859v13.377l22.234,5.757Z" transform="translate(-1091.219 -312.366)" fill="#fff" stroke="#1db2a6" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <path id="Path_9865" data-name="Path 9865" d="M1146.731,338.268" transform="translate(-1102.867 -309.276)" fill="#fff" stroke="#1db2a6" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_558" data-name="Ellipse 558" cx="4.374" cy="4.374" r="4.374" transform="translate(25.639 19.554)" fill="#fff" stroke="#1db2a6" stroke-width="2"/>
+    <circle id="Ellipse_559" data-name="Ellipse 559" cx="1.374" cy="1.374" r="1.374" transform="translate(29.639 22.554)" fill="#1db2a6"/>
+    <path id="Path_9864" data-name="Path 9864" d="M1.822,16.05l39.94,4.769A2.066,2.066,0,0,0,44.054,18.5l-.123-.92a2.065,2.065,0,0,0-2.047-1.794H40.818a2.065,2.065,0,0,1-1.712-.91L32.388,4.917a2.068,2.068,0,0,0-1.262-.861L13.185.05A2.067,2.067,0,0,0,11,.947L4.525,10.986a2.066,2.066,0,0,1-1.736.946H2.066A2.066,2.066,0,0,0,.048,13.56h0A2.067,2.067,0,0,0,1.822,16.05Z" transform="matrix(0.998, 0.07, -0.07, 0.998, 1.453, 0)" fill="#fff" stroke="#1db2a6" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_9862" data-name="Path 9862" d="M1057.359,336.988s35.863,6.159,36.03,6.192c4.327.876-2.893,6.942-4.392,8.61-2.982,3.318-10.334,7.079-15.106,6.415-1.818-.253-3.876-1.452-5.588-2.094l-11.635-4.36a2.393,2.393,0,0,1-.858-3.927l.092-.093a2.393,2.393,0,0,0,.555-2.493l-1.826-5.1A2.393,2.393,0,0,1,1057.359,336.988Z" transform="translate(-1051.458 -308.535)" fill="#fff" stroke="#fab61c" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

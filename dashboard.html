@@ -1,0 +1,479 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+        body {
+            font-family: "Rubik", sans-serif;
+        }
+        .dash-panel[data-v-51739e25]{
+            background-color: #fff;
+            border-radius: 4px;
+            -webkit-box-shadow: 2px 2px 6px 0 rgba(0,0,0,.2);
+            box-shadow: 2px 2px 6px 0 rgba(0,0,0,.2);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .performance .page-container .row > div {
+            margin-bottom: 30px;
+        }
+
+
+        #performance:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            min-height: 250px;
+            width: 100%;
+            content: "";
+            background: #1DB2A6;
+        }
+
+
+        .dash-panel header[data-v-51739e25] {
+            padding: 0px 25px 0px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+        }
+
+        .dash-panel header h2[data-v-51739e25] {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #767780;
+            font-weight: 500;
+            font-family: Rubik,sans-serif;
+            margin: 0;
+            height: 2.4em;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+        }
+
+        .whitetitle {
+            align-self: flex-start;
+            color: #fff;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: "Rubik", sans-serif;
+        }
+
+        .trend {
+            align-self: flex-end;
+            color: #BBBFCF;
+        }
+        .legend {
+            color: #BBBFCF;
+            display:flex;
+            justify-content:space-between;
+            font-size:13px;
+            padding:25px;
+            align-items:center;
+        }
+
+        .arrow {
+            align-self: flex-end;
+        }
+
+        .number {align-self:flex-start;
+            color: #1DB2A6;
+            font-size:50px;
+            font-weight:bold;
+            font-family:"Rubik", sans-serif;
+        }
+            .number .text {
+                font-size: 14px;
+                color: #1DB2A6;
+                display:inline;
+            }
+            .number .statistic{
+                margin-left:10px;
+                margin-right:10px;
+            }
+
+        .dash-content{
+            display:flex;
+            padding:0px 20px;
+            justify-content:space-between;
+        }
+
+        .legendcircle {display:inline-block;
+            background: #FAB61C;
+            width:15px;
+            height:15px;
+            border-radius:50%;
+            margin-right:10px;
+        }
+        .counter{
+            margin-left:20px;
+        }
+
+        .mt-1{
+            margin-top:5px;
+        }
+        .statistic {display:inline;
+            align-self: flex-start;
+            color: #1DB2A6;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Rubik", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div data-v-51739e25="" id="performance" role="tabpanel" aria-labelledby="performance-tab" class="tab-pane fade show active">
+        <div data-v-51739e25="" class="container">
+
+            <div data-v-51739e25="" class="row first-row text-center">
+                <div class="col-md-12"><h2 class="whitetitle">Performance</h2></div>
+                <div data-v-51739e25="" class="col-md-4 mb-4">
+                    <div data-v-51739e25="" class="dash-panel">
+                        <header data-v-51739e25="">
+                            <h2 data-v-51739e25="">Total Claims volume</h2>
+                            <span class="trend">+3%<img src="images/arrowup.svg"></span>
+
+                        </header>
+                        <div class="dash-content">
+
+
+                            <div class="number"><img src="images/claim.svg" /><p id="claim" class="statistic">1400</p></div>
+                            <img src="images/curve1.svg" />
+
+                        </div>
+                        <footer class="legend">
+                            <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                            <div><a href="#"><img src="images/arrow.svg" /></a></div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div data-v-51739e25="" class="col-md-4 mb-4">
+                    <div data-v-51739e25="" class="dash-panel">
+                        <header data-v-51739e25="">
+                            <h2 data-v-51739e25="">Average turnaround per claim</h2>
+                            <span class="trend">+3%<img src="images/arrowup.svg"></span>
+                        </header>
+                        <div class="dash-content">
+
+
+                            <div class="number"><img src="images/turnaround.svg" /><p id="claim" class="statistic">5</p><p class="text">Days</p></div>
+                            <img src="images/curve1.svg" />
+
+                        </div>
+                        <footer class="legend">
+                            <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                            <div><a href="#"><img src="images/arrow.svg" /></a></div>
+                        </footer>
+                    </div>
+                </div>
+                <div data-v-51739e25="" class="col-md-4 mb-4">
+                    <div data-v-51739e25="" class="dash-panel">
+                        <header data-v-51739e25="">
+                            <h2 data-v-51739e25="">Average amount of steps per claim</h2>
+                            <span class="trend">-3%<img src="images/arrowdown.svg"></span>
+                        </header>
+
+                        <div class="dash-content">
+
+
+                            <div class="number"><img src="images/steps.svg" /><p id="claim" class="statistic">6</p><p class="text">Days</p></div>
+                            <img src="images/curve5.svg" />
+
+                        </div>
+
+
+                        <footer class="legend">
+                            <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                            <div><a href="#"><img src="images/arrow.svg" /></a></div>
+                        </footer>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div data-v-51739e25="" class="row second-row text-center">
+                <div data-v-51739e25="" class="col-md-4">
+                    <div data-v-51739e25="" class="dash-panel">
+
+                        <header data-v-51739e25=""><h2 data-v-51739e25="">Latest trend</h2></header>
+                        <div data-v-51739e25="" class="dash-content" >
+
+
+                            <canvas id="myChart" width="200" height="200"></canvas>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-v-51739e25="" class="col-md-4">
+                    <div data-v-51739e25="" class="dash-panel">
+                        <header data-v-51739e25=""><h2 data-v-51739e25="">Claim recommendations</h2></header>
+                        <div data-v-51739e25="" class="dash-content" >
+                            <canvas id="progress-chart"></canvas>
+                            <div id="chart-legend" class="chart-legend"></div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-51739e25="" class="col-md-4">
+                    <div data-v-51739e25="" class="dash-panel">
+
+                        <header data-v-51739e25=""><h2 data-v-51739e25="">Claim processing</h2></header>
+
+                        <div data-v-51739e25="" class="dash-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script source="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
+   
+    <script>
+        // These are the options that I'm going to be using on each statistic
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ",",
+            decimal: "."
+        };
+
+        // Find all Statistics on page, put them inside a variable
+        var statistics = $(".statistic");
+
+        // For each Statistic we find, animate it
+        statistics.each(function (index) {
+            // Find the value we want to animate (what lives inside the p tags)
+            var value = $(statistics[index]).html();
+            // Start animating
+            var statisticAnimation = new CountUp(statistics[index], 0, value, 0, 5, options);
+            statisticAnimation.start();
+        });
+
+
+        //PieCharts
+        
+        
+
+        var ccx = document.getElementById('progress-chart').getContext('2d');
+        var chart = new Chart(ccx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+            // The data for our dataset
+            data: {
+               labels: ["Claims Settled", "Claims Sent to Investigation", "Claims Repudiated"],
+                datasets: [{
+                    label: "Claims",
+                    backgroundColor: [
+                        '#25BF85',
+                        '#FAB61C',
+                        '#F65650',
+                    ],
+                    data: [1400, 300, 100],
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    enabled: true,
+                    mode: 'index',
+                    callbacks: {
+                        label: function (tooltipItems, data) {
+                            var i, label = [], l = data.datasets.length;
+                            for (i = 0; i < l; i += 1) {
+                                label[i] = data.datasets[i].label + ': ' + data.datasets[i].data[tooltipItems.index] + '%';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        });
+
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chartline = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+            // String - Colour of the scale line
+            scaleLineColor: "#BBBFCF",
+
+            // Number - Pixel width of the scale line
+            scaleLineWidth: 1,
+
+            // Boolean - Whether to show labels on the scale
+            scaleShowLabels: false,
+
+            // Interpolated JS string - can access value
+            scaleLabel: "<%=value%>",
+
+            // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
+            scaleIntegersOnly: true,
+
+            // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+            scaleBeginAtZero: false,
+
+            // String - Scale label font declaration for the scale label
+            scaleFontFamily: "'Rubik', 'Helvetica', 'Arial', sans-serif",
+
+            // Number - Scale label font size in pixels
+            scaleFontSize: 12,
+
+            // String - Scale label font weight style
+            scaleFontStyle: "normal",
+
+            // String - Scale label font colour
+            scaleFontColor: "#BBBFCF",
+
+            // Boolean - whether or not the chart should be responsive and resize when the browser does.
+            responsive: true,
+
+            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+            maintainAspectRatio: true,
+
+            // Boolean - Determines whether to draw tooltips on the canvas or not
+            showTooltips: true,
+
+            // Function - Determines whether to execute the customTooltips function instead of drawing the built in tooltips (See [Advanced - External Tooltips](#advanced-usage-custom-tooltips))
+            customTooltips: false,
+
+            // Array - Array of string names to attach tooltip events
+            // The data for our dataset
+            data: {
+                labels: ["Claims Settled", "Claims Sent to Investigation", "Claims Repudiated"],
+                datasets: [
+                    {
+                        label: "Claims Repudiated",
+                        
+                        strokeColor: "#FC9D2F",
+                        pointColor: "#FC9D2F",
+                        pointStrokeColor: "#FC9D2F",
+                        pointHighlightFill: "#FC9D2F",
+                        pointHighlightStroke: "#FC9D2F",
+                        data: [250, 490, 500, 508, 499, 507, 400]
+                    },
+                    {
+                        label: "Claims Sent to Investigation",
+                       
+                        strokeColor: "#F65650",
+                        pointColor: "#F65650",
+                        pointStrokeColor: "#F65650",
+                        pointHighlightFill: "#F65650",
+                        pointHighlightStroke: "#F65650F",
+                        data: [65, 90, 100, 108, 99, 107, 100]
+                    },
+                    {
+                        label: "Claims Settled",
+                        
+                        strokeColor: "#25BF85",
+                        pointColor: "#25BF85",
+                        pointStrokeColor: "#25BF85",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "#25BF85",
+                        data: [1000, 1200, 1000, 1100, 1400, 1380, 1400]
+                    }
+                ]
+            },
+
+            // Configuration options go here
+            options: {
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    enabled: true,
+                    mode: 'index',
+                    callbacks: {
+                        label: function (tooltipItems, data) {
+                            var i, label = [], l = data.datasets.length;
+                            for (i = 0; i < l; i += 1) {
+                                label[i] = data.datasets[i].label + ': ' + data.datasets[i].data[tooltipItems.index] + '%';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        });
+        //Canvas
+        
+      
+        
+	
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

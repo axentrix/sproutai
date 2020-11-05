@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\less"
   ],
-  "SelectedNode": "\\dashboard.html",
+  "SelectedNode": "\\less\\variables.less",
   "PreviewInSolutionExplorer": false
 }

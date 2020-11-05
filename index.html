@@ -1,11 +1,731 @@
-﻿<!DOCTYPE html>
+﻿<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Anna Notovska">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>Sprout Dashboard</title>
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#F57F20">
+    <link rel="icon" href="images/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+    <!-- Custom styles from Anna -->
+    <link href="css/start.css" rel="stylesheet">
 </head>
+
 <body>
-    hello
+    <header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide" id="header">
+        <div class="header-section">
+
+            <div class="container-header" id="logoAndNav">
+                <div class="container-header" id="logoAndNav">
+
+                    <nav class="navbar navbar-expand-lg">
+                        <a type="button" class="sidebar-toggler" id="sidebarCollapse">
+                            <span class="sidebar-toggler-default">
+                                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+                                </svg>
+                            </span>
+                            <!--<span class="sidebar-toggler-toggled">
+                                <svg width="14" height="14" viewBox="0 0 18 18" >
+                                    <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+                                </svg>
+                            </span>-->
+                        </a>
+                        <a class="navbar-brand" href="index.html" aria-label="Front">
+                            <img src="images/logo.svg" alt="CMS" class="d-block mt-2 logo" />
+                        </a>
+
+
+                        <nav id="leftBar">
+
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon icon-dashboard">
+
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="selected">
+                                    <a href="#">
+                                        <span class="icon icon-motor">
+
+
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </nav>
+
+
+                        <div id="navBar" class="collapse navbar-collapse">
+
+                            <div class="navbar-nav ml-auto">
+
+                                <ul class="navbar-nav">
+
+                                    <li class="nav-item dropdown"><a href="#" class="nav-icon"><div class="position-relative"><img src="images/iconbell.svg" /><span class="indicator">4</span></div></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                                            <img src="images/avatar.png" class="avatar img-fluid rounded-circle mr-1" alt="Greg Cadel"> <span class="text-dark">Greg Cadel</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <ul>
+                                                <li class="dropdown-item user-header bglight">
+                                                    <p>
+                                                        ACB Investigator
+                                                        <small>(Investigation Department)</small>
+                                                    </p>
+                                                </li>
+                                                <li class="dropdown-item">  <a href="#">Sign out</a></li>
+                                            </ul>
+
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </nav>
+
+                </div>
+            </div>
+    </header>
+    <div class="subheader d-flex">
+
+        <nav class="navbar navbar-expand-lg" id="subheadernav">
+            <ul class="nav nav-pills substeps" role="tablist">
+
+
+
+
+
+                <li class="nav-item">
+                    <a href="#" class="claim-toggler toggled" id="claimcollapse"><img src="images/new/menuarrow.svg" /></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#c1" class="nav-link active" data-toggle="tab" href="#c1" role="tab" aria-selected="true"><span class="icon icon-context"></span>Context</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#c2" class="nav-link" data-toggle="tab" href="#c2" role="tab"><span class="icon icon-enrichments"></span>Enrichments</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#c3" class="nav-link" data-toggle="tab" href="#c3" role="tab"><span class="icon icon-claimdetails"></span>Claim Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#c4" class="nav-link" data-toggle="tab" href="#c4" role="tab"><span class="icon icon-vehicledetails"></span>Vehicle Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#c5" class="nav-link" data-toggle="tab" href="#c5" role="tab"><span class="icon icon-attachments"></span>Attachments</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id="claimsummary" class="card border-green">
+        <div class="claimdetails">
+
+            <h4>#01209BLM3322  Summary</h4>
+
+
+            <table width="100%" border="0" class="table details">
+                <tr>
+                    <td class="question">Claim Handler</td>
+                    <td>
+                        <strong>F. Rayner</strong><small>123 Department</small>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="question">Current Claim State</td>
+                    <td> <span class="badge status mr-2">En attente d'examen</span></td>
+                </tr>
+                <tr>
+                    <td class="question">LAST VIEWED</td>
+                    <td><small>Oct. 24, 2020</small><strong>18 days ago</strong></td>
+                </tr>
+
+                <tr>
+                    <td class="question">Claim Complexity</td>
+                    <td><div class="levelbar"><ul><li></li><li></li></ul></div></td>
+                </tr>
+                <tr>
+                    <td class="question">Deadline</td>
+                    <td><small>Oct. 24, 2020</small><strong class="warning">5 days left</strong></td>
+                </tr>
+            </table>
+            <button class="btn btn-green mr-2 ml-2 mt-4">Settle Claim <span class="icon icon-check"></span></button>
+            <button class="btn btn-secondary mr-2 ml-2 mt-2">Export Claim </button>
+        </div>
+    </div>
+
+
+    <main id="mainContent" class="tab-content">
+        <div id="c1" class="tab-pane fade show active">
+            <section id="claim-main">
+                <div class="card">
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col-md-12"><h2>LA RÉCLAMATION</h2></div>
+                            <div class="col-md-6">
+                                <div class="card-mini">
+                                    <div class="card-header d-flex"><span class="claimid">#01209BLM3322</span></div>
+                                    <div class="card-body">
+                                        <h5>Description</h5>
+
+                                        <p>Le demandeur Yanael Barbier a percuté la voiture du tiers en faisant marche arrière.</p>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-mini">
+                                    <div class="card-header d-flex"><span class="claimid">#01209BLM3322</span></div>
+                                    <div class="card-body">
+                                        <h5>Conditions</h5>
+
+                                        <p>Le demandeur Yanael Barbier a percuté la voiture du tiers en faisant marche arrière.</p>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+
+            <section id="claim-steps">
+                <div class="card">
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-between">
+                                <h1 class="text-center text-md-left">
+                                    <small>12 SEP 2020</small>
+                                    #01209BLM3322  <span class="badge status mr-2"> EN ATTENTE D'EXAMEN</span>
+
+                                </h1><button class="btn btn-green mr-2 ml-auto mt-4">Settle Claim <span class="icon icon-check"></span></button>
+                                <ul class="steps steps-5 mt-8">
+                                    <li class="completed current stagecolor_0"><a href="#" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 1</a></li>
+                                    <li class="completed"><a href="http://cms.streamhouse.org/case/2/view?stage=2" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 2</a></li>
+                                    <li class="stagecolor_5">
+                                        <div class="hourglass ml-2 mr-1">
+                                            <svg width="22px" height="42px" viewBox="0 0 73 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g id="hourglass">
+                                                    <path d="M63.8761664,86 C63.9491436,84.74063 64,83.4707791 64,82.1818182 C64,65.2090455 57.5148507,50.6237818 48.20041,44 C57.5148507,37.3762182 64,22.7909545 64,5.81818182 C64,4.52922091 63.9491436,3.25937 63.8761664,2 L10.1238336,2 C10.0508564,3.25937 10,4.52922091 10,5.81818182 C10,22.7909545 16.4851493,37.3762182 25.79959,44 C16.4851493,50.6237818 10,65.2090455 10,82.1818182 C10,83.4707791 10.0508564,84.74063 10.1238336,86 L63.8761664,86 Z" id="glass" fill="transparent" stroke="#ffffff" stroke-width="6"></path>
+                                                    <rect id="top-plate" fill="#ffffff" x="0" y="0" width="74" height="8" rx="2"></rect>
+                                                    <rect id="bottom-plate" fill="#ffffff" x="0" y="80" width="74" height="8" rx="2"></rect>
+
+                                                    <g id="top-sand" transform="translate(18, 21)">
+                                                        <clipPath id="top-clip-path" fill="white">
+                                                            <rect x="0" y="0" width="38" height="21"></rect>
+                                                        </clipPath>
+
+                                                        <path fill="#ffffff" clip-path="url(#top-clip-path)" d="M38,0 C36.218769,7.51704545 24.818769,21 19,21 C13.418769,21 1.9,7.63636364 0,0 L38,0 Z"></path>
+                                                    </g>
+
+                                                    <g id="bottom-sand" transform="translate(18, 55)">
+                                                        <clipPath id="bottom-clip-path" fill="white">
+                                                            <rect x="0" y="0" width="38" height="21"></rect>
+                                                        </clipPath>
+
+                                                        <g clip-path="url(#bottom-clip-path)">
+                                                            <path fill="#ffffff" d="M0,21 L38,21 C36.1,13.3636364 24.581231,0 19,0 C13.181231,0 1.781231,13.4829545 0,21 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <a href="http://cms.streamhouse.org/case/2/view?stage=3" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">
+                                            Investigation
+                                        </a>
+                                    </li>
+                                    <li class=""><a href="http://cms.streamhouse.org/case/2/view?stage=4" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 4</a></li>
+                                    <li class=""><a href="http://cms.streamhouse.org/case/2/view?stage=5" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 5</a></li>
+
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="claim-history" class="mt-2">
+                <div class="card greybg">
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-center text-md-left mb-4">
+                                    Previous Claims
+                                </h2>
+
+                                <table class="w-100 claimstable">
+
+
+                                    <tbody class="border-right-orange">
+                                        <tr class="data-item">
+                                            <td class="case-number">
+                                                <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                    F535892
+                                                </a>
+                                            </td>
+                                            <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                            <td data-v-27a102ae="">
+                                                <p data-v-27a102ae="" class="size-m">
+                                                    <div class="tip">
+
+                                                        <span class="tiptext"> Treatment not covered</span>
+                                                    </div>
+
+
+                                                </p>
+                                            </td>
+
+
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                        </tr>
+
+                                    </tbody>
+
+
+                                    <tbody class="border-right-red">
+                                        <tr class="data-item">
+                                            <td class="case-number">
+                                                <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                    F535892
+                                                </a>
+                                            </td>
+                                            <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                            <td data-v-27a102ae="">
+                                                <p data-v-27a102ae="" class="size-m">
+                                                    <div class="tip">
+
+                                                        <span class="tiptext"> Treatment not covered</span>
+                                                    </div>
+
+
+                                                </p>
+                                            </td>
+
+
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation "></span></td>
+
+
+
+                                        </tr>
+
+                                    </tbody>
+
+
+
+                                </table>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+        <div id="c2" class="tab-pane fade">
+            <div class=" enrichheader d-flex">
+
+                <nav class="navbar navbar-expand-lg w-100" id="enrichnav">
+                    <ul class="nav nav-pills substeps" role="tablist" id="enrichnavul">
+
+
+                        <li class="nav-item">
+                            <a href="#en1" class="nav-link active" data-toggle="tab" role="tab" aria-selected="true">
+                                <span class="badge warning mr-2">
+                                    <i class="fa fa-exclamation-triangle"></i>
+                                </span>Policy Holder
+                            </a>
+
+                            <ul class="enrichments nav nav-pills substeps" role="tablist">
+
+                                <li class="nav-item">
+                                    <a href="#en1" class="nav-link active" data-toggle="tab" role="tab">
+                                        <span class="icon icon-auto-identity-check"></span>
+                                        <span class="badge warning mr-2">
+                                            <i class="fa fa-exclamation-triangle"></i>
+                                        </span>
+                                        Identity Check
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#en2" class="nav-link" data-toggle="tab" role="tab"><span class="icon icon-auto-coverage"></span>Coverage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#en3" class="nav-link" data-toggle="tab" role="tab"><span class="icon icon-auto-credit-rating"></span>Credit Rating</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#en4" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-company-check"></span>Company Check</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#en5" class="nav-link" data-toggle="tab" role="tab"><span class="icon icon-auto-employment-status"></span>Emplyment Status</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a href="#en6" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-weather"></span>Wearher</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#en7" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-fraud-db-check"></span>Fraud DB Check</a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a href="#en8" class="nav-link" data-toggle="tab" role="tab"><span class="icon   icon-auto-car-value"></span>Car Value</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#en9" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-location"></span>Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#en10" class="nav-link" data-toggle="tab" role="tab"><span class="icon   icon-auto-anti-money-laundering"></span>Anti Money Laundering</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#en11" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-car-history"></span>Car History</a>
+                                </li>
+
+                            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Third Party</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Witnesses</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div id="en1" class="tab-pane show active fade enrichment-content">
+
+                
+
+
+
+            </div>
+
+            <div id="en2" class="tab-pane fade enrichment-content">
+
+
+                Next Document
+
+
+            </div>
+
+            <div id="en3" class="tab-pane fade enrichment-content">
+
+
+                Next Document
+
+
+            </div>
+
+            <div id="en4" class="tab-pane fade enrichment-content">
+
+
+                Next Document
+
+
+            </div>
+
+
+        </div>
+        <div id="c3" class="tab-pane fade"><section class="mt-4"><h2>Claim Details</h2></section></div>
+        <div id="c4" class="tab-pane fade"><section class="mt-4"><h2>Vehicle Details</h2></section></div>
+        <div id="c5" class="tab-pane fade">
+
+
+            <div class="enrichheader d-flex">
+
+                <nav class="navbar navbar-expand-lg w-100" id="docnav">
+                    <ul class="nav nav-pills substeps" role="tablist">
+
+
+                        <li class="nav-item">
+                            <a href="#en1" class="nav-link active" data-toggle="tab" role="tab" aria-selected="true">
+                                <span class="badge warning mr-2">
+                                    <i class="fa fa-exclamation-triangle"></i>
+                                </span>Accident form
+                            </a>
+
+                          
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Lawyer Letter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Repair invoice</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+
+            <section class="mt-4">
+
+                <div class="row">
+                    <div class="col-md-5"><div class="card"><img src="images/new/doc.png" /></div></div>
+                    <div class="col-md-6">
+                        <div class="card">
+
+
+                            <div class="bs-stepper" id="stepper">
+                                <div class="bs-stepper-header" role="tablist">
+                                    <!-- your steps here -->
+                                    <div class="step" data-target="#document">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="document" id="document-trigger">
+                                            <span class="bs-stepper-circle"></span>
+                                            <span class="bs-stepper-label">Document</span>
+                                        </button>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="step" data-target="#accident-form">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="accident-form" id="accident-form-trigger">
+                                            <span class="bs-stepper-circle"></span>
+                                            <span class="bs-stepper-label">Accident Form</span>
+                                        </button>
+                                    </div>  <div class="line"></div>
+                                    <div class="step" data-target="#summary">
+                                        <button type="button" class="step-trigger" role="tab" aria-controls="summary" id="summary-trigger">
+                                            <span class="bs-stepper-circle"></span>
+                                            <span class="bs-stepper-label">Summary</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="bs-stepper-content">
+                                    <!-- your steps content here -->
+                                    <div id="document" class="content" role="tabpanel">
+                                        <h3 class="mt-4">Document</h3>
+                                        <div class="data-header mt-3 mb-3"><span class="number">1</span></div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label for="date">Date de l’accident</label>
+                                                <input type="text" class="form-control" id="date" value="05/10/2020">
+                                            </div>
+                                            <div class="form-group col-md-6 has-error">
+                                                <label for="date">Date de l’accident</label>
+                                                <input type="text" class="form-control " id="date" value="08/10/2020">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="data-header yellow mt-3 mb-3"><span class="number">2</span></div>
+                                        <div class="row">
+                                            <div class="col-md-6"><div class="header-vehicle">Vehicle A</div></div><div class="  col-md-6 "><div class="header-vehicle light">Vehicle B</div></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label for="date">Date de l’accident</label>
+                                                <input type="text" class="form-control" id="date" value="05/10/2020">
+                                            </div>
+                                            <div class="form-group col-md-6 has-error">
+                                                <label for="date">Date de l’accident</label>
+                                                <input type="text" class="form-control " id="date" value="08/10/2020">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div id="accident-form" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                                        <h3 class="mt-4">Accident Form</h3>
+                                        <div class="p-4 d-flex justify-content-center"><img src="images/new/cars.svg" /></div>
+
+
+                                    </div>
+                                    <div id="summary" class="content " role="tabpanel" aria-labelledby="summary">
+
+                                        <h3 class="mt-4">Summary</h3>
+
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="data-header"></div>
+                                            </div>
+
+                                            <div class="col-md-4"><div class="header-vehicle">Vehicle A</div></div><div class="  col-md-4 "><div class="header-vehicle light">Vehicle B</div></div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-4"><h6>CIRCUMSTANCES MATCH</h6></div>
+                                            <div class="col-md-4 d-flex justify-content-center"><span class="icon-circle-solid"><i class="fas fa-check"></i></span></div>
+                                            <div class="col-md-4 d-flex justify-content-center"><span class="icon-circle-solid"><i class="fas fa-check"></i></span></div>
+                                        </div>
+                                        <div class="row justify-content-center">
+
+                                            <a href="#" class="btn btn-primary mt-4">Validate Document</a>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="d-none">
+        <div class="container d-flex">
+
+
+            <span class="d-block ml-auto copyright">2020 &copy;Copyright Sprout</span>
+
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js" ></script>
+            
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#leftBar').toggleClass('active');
+                $(this).toggleClass("toggled");
+                $("#mainContent").toggleClass("active");
+                $("#claimsummary").toggleClass("active");
+
+                $("#subheadernav").toggleClass("active");
+            });
+
+
+            $('#claimcollapse').on('click', function (e) {
+
+                $(this).toggleClass("toggled");
+                $("#mainContent").toggleClass("enlarge");
+                $("#claimsummary").toggleClass("close");
+
+                $("#subheadernav").toggleClass("enlarge");
+
+                e.preventDefault();
+            });
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+
+            var stepper = document.querySelector('#stepper')
+            stepperForm = new Stepper(stepper, {
+                linear: false,
+                animation: true
+            })
+
+
+
+
+        });
+
+
+    </script>
+
 </body>
-</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.109" height="32.755" viewBox="0 0 56.109 32.755">
+  <g id="Group_16897" data-name="Group 16897" transform="translate(1 1)">
+    <g id="Group_16897-2" data-name="Group 16897" transform="translate(29.605 13.627)">
+      <path id="Path_12579" data-name="Path 12579" d="M258.986,89.394c0,.51.253,1.277,1.01,1.277.505,0,1.263-.256,1.263-1.021v-.256a14.527,14.527,0,0,1,14.394-14.809,15.1,15.1,0,0,1,7.323,2.043c.5.256,1.262.256,1.515-.255h0c0-.511,0-1.277-.5-1.532h0a16.422,16.422,0,0,0-8.333-2.3,16.745,16.745,0,0,0-16.667,16.851" transform="translate(-258.986 -72.543)" fill="#1f2240"/>
+      <path id="Path_12581" data-name="Path 12581" d="M280.668,85.433h-.577a1.83,1.83,0,0,0-.193,3.656,1.9,1.9,0,0,0,1.924-1.732h0V86.78l7.119-8.658Z" transform="translate(-265.43 -72.658)" fill="#1f2240"/>
+    </g>
+    <path id="Path_12666" data-name="Path 12666" d="M0,0H17.764" transform="translate(5.833 15.408)" fill="none" stroke="#1f2240" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_12583" data-name="Path 12583" d="M4,0H47.294" transform="translate(-3.671 6.07)" fill="none" stroke="#1f2240" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_12667" data-name="Path 12667" d="M0,0H17.764" transform="translate(5.833 21.027)" fill="none" stroke="#1f2240" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_12582" data-name="Path 12582" d="M246.25,87.847H223.893a2.781,2.781,0,0,1-2.781-2.781V61.676a2.781,2.781,0,0,1,2.781-2.78H262.8a2.781,2.781,0,0,1,2.781,2.78v6.192" transform="translate(-221.112 -58.896)" fill="none" stroke="#1f2240" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

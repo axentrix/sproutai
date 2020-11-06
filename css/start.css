@@ -2424,13 +2424,12 @@ ul.enrichments {
 .enrichheader ul li {
   display: inline-flex;
   align-items: center;
-  margin-right: 22px;
 }
 .enrichheader ul li a {
   color: #b3b6ce;
   display: inline-block;
   line-height: 30px;
-  text-indent: 32px;
+  text-indent: 42px;
 }
 .enrichheader ul li a.active {
   border-radius: 0px;

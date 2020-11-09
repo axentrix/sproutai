@@ -193,7 +193,7 @@
 
 
                             <div class="number"><img src="images/steps.svg" /><p id="claim" class="statistic">6</p><p class="text">Days</p></div>
-                            <img src="images/curve5.svg" />
+                            <img src="images/curve1.svg" />
 
                         </div>
 
@@ -213,47 +213,118 @@
 
 
 
-            <div data-v-51739e25="" class="row second-row text-center">
-                <div data-v-51739e25="" class="col-md-4">
-                    <div data-v-51739e25="" class="dash-panel">
-
-                        <header data-v-51739e25=""><h2 data-v-51739e25="">Latest trend</h2></header>
-                        <div data-v-51739e25="" class="dash-content" >
-
-
-                            <canvas id="myChart" width="200" height="200"></canvas>
-
+            <div class="row second-row">
+                <div class="d-flex col-xxl-7 col-md-6">
+                    <div class="flex-fill w-100 card">
+                        <div class="card-header">
+                            <div class="card-actions float-right">
+                                <span class="cursor-pointer mr-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="23 4 23 10 17 10"></polyline>
+                                        <polyline points="1 20 1 14 7 14"></polyline>
+                                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                    </svg>
+                                </span>
+                                <div class="d-inline-block dropdown">
+                                    <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="1"></circle>
+                                            <circle cx="12" cy="5" r="1"></circle>
+                                            <circle cx="12" cy="19" r="1"></circle>
+                                        </svg>
+                                    </a><div class="dropdown-menu mt-3" style="">
+                                        <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last Month</button>
+                                        <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last Week</button>
+                                        <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last 3 Months</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mb-0 card-title">Recent Activity</h5>
+                        </div>
+                        <div class="py-3 card-body">
+                            <div class="chart chart-sm">
+                                <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                <div class="chartjs-size-monitor">
+                                    <div class="chartjs-size-monitor-expand">
+                                        <div class=""></div>
+                                    </div><div class="chartjs-size-monitor-shrink">
+                                        <div class=""></div>
+                                    </div>
+                                </div>
+                                <canvas id="recentactivity" height="212" width="500" class="chartjs-render-monitor" style="display: block; width: 500px; height: 212px;"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div data-v-51739e25="" class="col-md-4">
-                    <div data-v-51739e25="" class="dash-panel">
-                        <header data-v-51739e25=""><h2 data-v-51739e25="">Claim recommendations</h2></header>
-                        <div data-v-51739e25="" class="dash-content" >
-                            <canvas id="progress-chart"></canvas>
-                            <div id="chart-legend" class="chart-legend"></div>
-                        </div>
-                    </div>
-                </div>
-                <div data-v-51739e25="" class="col-md-4">
-                    <div data-v-51739e25="" class="dash-panel">
+                <div class="d-flex col-xxl-5 col-md-6" id="small-stats">
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex">
 
-                        <header data-v-51739e25=""><h2 data-v-51739e25="">Claim processing</h2></header>
+                                <div class="card flex-fill">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                            <div class="mt-0 col"><h5 class="card-title">My Cases Summary</h5></div>
+                                            <canvas id="pie" width="245" height="245" class="chartjs-render-monitor" style="display: block; width: 245px; height: 245px;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div data-v-51739e25="" class="dash-content">
+                            </div>
 
+
+                            <div class="col-sm-6">
+                                <div class="card redcard">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="mt-0 col"><h5 class="card-title">Critical Cases</h5></div>
+                                            <div class="col-auto col">
+                                                <div class="avatar">
+                                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                                        <i class="fa fa-exclamation-triangle"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><h3 class="display-5 mt-1 mb-3">1</h3><div class="mb-0"><a href="#">View case</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="mt-0 col">
+                                                <h5 class="card-title">Investigation Stage</h5>
+                                            </div><div class="col-auto col">
+                                                <div class="avatar">
+                                                    <div class="avatar-title rounded-circle bg-primary-dark">
+                                                        <img src="images/investigation.svg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="display-5 mt-1 mb-3">4</h3>
+                                        <div class="mb-0">
+                                            <a href="#">View Cases</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script source="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
     <script>
         // These are the options that I'm going to be using on each statistic
         var options = {
@@ -276,159 +347,100 @@
         });
 
 
-        //PieCharts
-        
-        
-
-        var ccx = document.getElementById('progress-chart').getContext('2d');
-        var chart = new Chart(ccx, {
-            // The type of chart we want to create
-            type: 'doughnut',
-            // The data for our dataset
-            data: {
-               labels: ["Claims Settled", "Claims Sent to Investigation", "Claims Repudiated"],
-                datasets: [{
-                    label: "Claims",
-                    backgroundColor: [
-                        '#25BF85',
-                        '#FAB61C',
-                        '#F65650',
-                    ],
-                    data: [1400, 300, 100],
-                }]
-            },
-
-            // Configuration options go here
-            options: {
+        new Chart(document.getElementById("pie"), {
+            "type": "doughnut", options: {
                 legend: {
-                    display: false,
-                },
-                tooltips: {
-                    enabled: true,
-                    mode: 'index',
-                    callbacks: {
-                        label: function (tooltipItems, data) {
-                            var i, label = [], l = data.datasets.length;
-                            for (i = 0; i < l; i += 1) {
-                                label[i] = data.datasets[i].label + ': ' + data.datasets[i].data[tooltipItems.index] + '%';
-                            }
-                            return label;
-                        }
-                    }
+                    display: false
                 }
-            }
+            }, "data": { "labels": ["Repudiation", "Investigation", "Closed"], "datasets": [{ "label": "My First Dataset", "data": [300, 50, 100], "backgroundColor": ["#EC4A4A", "#FFC710", "#8ACFCF"] }] }
         });
 
 
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var chartline = new Chart(ctx, {
-            // The type of chart we want to create
+        var ctx = document.getElementById('recentactivity')
+        // eslint-disable-next-line no-unused-vars
+        var myChart = new Chart(ctx, {
             type: 'line',
-            // String - Colour of the scale line
-            scaleLineColor: "#BBBFCF",
-
-            // Number - Pixel width of the scale line
-            scaleLineWidth: 1,
-
-            // Boolean - Whether to show labels on the scale
-            scaleShowLabels: false,
-
-            // Interpolated JS string - can access value
-            scaleLabel: "<%=value%>",
-
-            // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
-            scaleIntegersOnly: true,
-
-            // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-            scaleBeginAtZero: false,
-
-            // String - Scale label font declaration for the scale label
-            scaleFontFamily: "'Rubik', 'Helvetica', 'Arial', sans-serif",
-
-            // Number - Scale label font size in pixels
-            scaleFontSize: 12,
-
-            // String - Scale label font weight style
-            scaleFontStyle: "normal",
-
-            // String - Scale label font colour
-            scaleFontColor: "#BBBFCF",
-
-            // Boolean - whether or not the chart should be responsive and resize when the browser does.
-            responsive: true,
-
-            // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-            maintainAspectRatio: true,
-
-            // Boolean - Determines whether to draw tooltips on the canvas or not
-            showTooltips: true,
-
-            // Function - Determines whether to execute the customTooltips function instead of drawing the built in tooltips (See [Advanced - External Tooltips](#advanced-usage-custom-tooltips))
-            customTooltips: false,
-
-            // Array - Array of string names to attach tooltip events
-            // The data for our dataset
             data: {
-                labels: ["Claims Settled", "Claims Sent to Investigation", "Claims Repudiated"],
-                datasets: [
-                    {
-                        label: "Claims Repudiated",
-                        
-                        strokeColor: "#FC9D2F",
-                        pointColor: "#FC9D2F",
-                        pointStrokeColor: "#FC9D2F",
-                        pointHighlightFill: "#FC9D2F",
-                        pointHighlightStroke: "#FC9D2F",
-                        data: [250, 490, 500, 508, 499, 507, 400]
-                    },
-                    {
-                        label: "Claims Sent to Investigation",
-                       
-                        strokeColor: "#F65650",
-                        pointColor: "#F65650",
-                        pointStrokeColor: "#F65650",
-                        pointHighlightFill: "#F65650",
-                        pointHighlightStroke: "#F65650F",
-                        data: [65, 90, 100, 108, 99, 107, 100]
-                    },
-                    {
-                        label: "Claims Settled",
-                        
-                        strokeColor: "#25BF85",
-                        pointColor: "#25BF85",
-                        pointStrokeColor: "#25BF85",
-                        pointHighlightFill: "#fff",
-                        pointHighlightStroke: "#25BF85",
-                        data: [1000, 1200, 1000, 1100, 1400, 1380, 1400]
-                    }
+                labels: [
+                    'April',
+                    'May',
+                    'June'
+
+                ],
+                datasets: [{
+                    label: "Repudiation",
+                    data: [
+                        23,
+                        14,
+                        34
+
+                    ],
+                    lineTension: 0.8,
+                    backgroundColor: 'transparent',
+                    borderColor: '#EC4A4A',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#EC4A4A'
+                },
+                {
+                    label: "Investigation",
+                    data: [
+                        83,
+                        104,
+                        304
+
+                    ],
+                    lineTension: 0.8,
+                    backgroundColor: 'transparent',
+                    borderColor: '#ffc710',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#ffc710'
+                },
+                {
+                    label: "Trial",
+                    data: [
+                        33,
+                        54,
+                        22
+
+                    ],
+                    lineTension: 0.8,
+                    backgroundColor: 'transparent',
+                    borderColor: '#c7ece8',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#c7ece8'
+                }
+
                 ]
             },
-
-            // Configuration options go here
             options: {
-                legend: {
-                    display: false,
-                },
-                tooltips: {
-                    enabled: true,
-                    mode: 'index',
-                    callbacks: {
-                        label: function (tooltipItems, data) {
-                            var i, label = [], l = data.datasets.length;
-                            for (i = 0; i < l; i += 1) {
-                                label[i] = data.datasets[i].label + ': ' + data.datasets[i].data[tooltipItems.index] + '%';
-                            }
-                            return label;
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: false
                         }
-                    }
+                    }]
+                },
+                legend: {
+                    display: true
                 }
             }
+        })
+
+
+
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#leftBar').toggleClass('active');
+            $(this).toggleClass("toggled");
+            $("#mainContent").toggleClass("active");
         });
-        //Canvas
-        
-      
-        
-	
+
+
+                //Canvas
+
+
+
+
 
     </script>
 

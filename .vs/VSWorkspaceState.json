@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
+    "\\js",
     "\\less"
   ],
-  "SelectedNode": "\\less\\variables.less",
+  "SelectedNode": "\\css\\auto-glyphter.css",
   "PreviewInSolutionExplorer": false
 }

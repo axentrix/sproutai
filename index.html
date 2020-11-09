@@ -241,17 +241,21 @@
 
             <section id="claim-steps">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body d-flex justify-content-center">
 
 
-                        <div class="row">
-                            <div class="col-md-12 d-flex justify-content-between">
+                        <div class="row w-100">
+                            <div class="container-fluid d-flex recommendation">
                                 <h1 class="text-center text-md-left">
                                     <small>12 SEP 2020</small>
                                     #01209BLM3322  <span class="badge status mr-2"> EN ATTENTE D'EXAMEN</span>
 
-                                </h1><button class="btn btn-green mr-2 ml-auto mt-4">Settle Claim <span class="icon icon-check"></span></button>
-                                <ul class="steps steps-5 mt-8">
+                                </h1>
+
+
+
+
+                                <ul class="steps steps-5 mt-4">
                                     <li class="completed current stagecolor_0"><a href="#" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 1</a></li>
                                     <li class="completed"><a href="#" class="link-button" title="Description of this step" data-toggle="tooltip" data-html="true">Claim Step 2</a></li>
                                     <li class="stagecolor_5">
@@ -291,7 +295,18 @@
 
                                 </ul>
 
+                                <h5 class="mt-4">Recommended Action</h5>
 
+                                <div class="row w-100 ">
+
+
+
+                                    <div class="col-md-3"><button class="btn btn-blue inactive">Reconsider<span class="icon icon-missing"></span></button></div>
+                                    <div class="col-md-3"><button class="btn btn-orange inactive">Send to Investigation <span class="icon icon-investigation"></span></button></div>
+                                    <div class="col-md-3"><button class="btn btn-green">Settle Claim <span class="icon icon-check"></span></button></div>
+
+                                    <div class="col-md-3"><button class="btn btn-red inactive">Repudiate<span class="icon icon-repudiation"></span></button></div>
+                                </div>
 
                             </div>
                         </div>
@@ -311,8 +326,66 @@
                                 </h2>
 
                                 <table class="w-100 claimstable">
+                                    <tbody class="border-right-blue">
+                                        <tr class="data-item">
+                                            <td class="case-number">
+                                                <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                    F535892
+                                                </a>
+                                            </td>
+                                            <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                            <td data-v-27a102ae="">
+                                                <p data-v-27a102ae="" class="size-m">
+                                                    <div class="tip">
+
+                                                        <span class="tiptext"> Treatment not covered</span>
+                                                    </div>
 
 
+                                                </p>
+                                            </td>
+
+
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                        </tr>
+
+                                    </tbody>
+                                    <tbody class="border-right-green">
+                                        <tr class="data-item">
+                                            <td class="case-number">
+                                                <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                    F535892
+                                                </a>
+                                            </td>
+                                            <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                            <td data-v-27a102ae="">
+                                                <p data-v-27a102ae="" class="size-m">
+                                                    <div class="tip">
+
+                                                        <span class="tiptext"> Treatment not covered</span>
+                                                    </div>
+
+
+                                                </p>
+                                            </td>
+
+
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check "></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                            <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                        </tr>
+
+                                    </tbody>
                                     <tbody class="border-right-orange">
                                         <tr class="data-item">
                                             <td class="case-number">
@@ -400,7 +473,7 @@
 
                         <li class="nav-item">
                             <a href="#en1" class="nav-link active" data-toggle="tab" role="tab" aria-selected="true">
-                                <span class="badge warning mr-2">
+                                <span class="badge warning ">
                                     <i class="fa fa-exclamation-triangle"></i>
                                 </span>Policy Holder
                             </a>
@@ -410,7 +483,7 @@
                                 <li class="nav-item">
                                     <a href="#en1" class="nav-link active" data-toggle="tab" role="tab">
                                         <span class="icon icon-auto-identity-check"></span>
-                                        <span class="badge warning mr-2">
+                                        <span class="badge warning">
                                             <i class="fa fa-exclamation-triangle"></i>
                                         </span>
                                         Identity Check
@@ -418,13 +491,17 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#en2" class="nav-link" data-toggle="tab" role="tab"><span class="icon icon-auto-coverage"></span>Coverage</a>
+                                    <a href="#en2" class="nav-link" data-toggle="tab" role="tab">
+                                        <span class="icon icon-auto-coverage"></span><span class="badge success">
+                                            <i class="fa fa-check-circle"></i>
+                                        </span>Coverage
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#en3" class="nav-link" data-toggle="tab" role="tab"><span class="icon icon-auto-credit-rating"></span>Credit Rating</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#en4" class="nav-link" data-toggle="tab" role="tab"><span class="icon  icon-auto-company-check"></span>Company Check</a>
+                                    <a href="#en4" class="nav-link disabled" data-toggle="tab" role="tab"><span class="icon  icon-auto-company-check"></span>Company Check</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -483,43 +560,349 @@
                 </nav>
 
             </div>
+            <div class="tab-content">
+                <div id="en1" class="tab-pane show active fade enrichment-content">
 
-            <div id="en1" class="tab-pane show active fade enrichment-content">
 
-                
+                    <section class="mt-4">
 
+                        <div class="row">
+                            <div class="col-md-6"><div class="card"><img src="images/new/doc2.png"></div></div>
+                            <div class="col-md-5">
+                                <div class="card">
+
+                                    <div class="card-body subdetails d-flex d-column justify-content-center">
+
+
+
+                                        <div class="tip-check p-4 text-center">Error description</div>
+                                        <div class="f-modal-alert">
+
+                                            <div class="f-modal-icon f-modal-warning scaleWarning">
+                                                <span class="f-modal-body pulseWarningIns"></span>
+                                                <span class="f-modal-dot pulseWarningIns"></span>
+                                            </div>
+                                            <div class="f-modal-icon f-modal-success animate d-none">
+                                                <span class="f-modal-line f-modal-tip animateSuccessTip"></span>
+                                                <span class="f-modal-line f-modal-long animateSuccessLong"></span>
+                                                <div class="f-modal-placeholder"></div>
+                                                <div class="f-modal-fix"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <div id="en2" class="tab-pane fade enrichment-content">
+
+
+                    <section class="mt-4">
+
+                        <div class="row">
+                            <div class="col-md-6"><div class="card"><img src="images/new/doc2.png"></div></div>
+                            <div class="col-md-5">
+                                <div class="card">
+
+                                    <div class="card-body  d-flex d-column justify-content-center">
+
+
+
+                                        <div class="tip-check p-4 text-center"><h6>Treatment prescribed</h6><p>Tylenol which is perfectly fine</p></div>
+                                        <div class="f-modal-alert">
+
+                                            <div class="f-modal-icon f-modal-warning scaleWarning  d-none">
+                                                <span class="f-modal-body pulseWarningIns"></span>
+                                                <span class="f-modal-dot pulseWarningIns"></span>
+                                            </div>
+                                            <div class="f-modal-icon f-modal-success animate">
+                                                <span class="f-modal-line f-modal-tip animateSuccessTip"></span>
+                                                <span class="f-modal-line f-modal-long animateSuccessLong"></span>
+                                                <div class="f-modal-placeholder"></div>
+                                                <div class="f-modal-fix"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <div id="en3" class="tab-pane fade enrichment-content">
+
+
+                    <section class="mt-4">
+
+                        <div class="row">
+                            <div class="col-md-6"><div class="card"><img src="images/new/doc2.png"></div></div>
+                            <div class="col-md-5">
+                                <div class="card">
+
+                                    <div class="card-body  d-flex d-column justify-content-center">
+
+
+
+                                        <div class="tip-check p-4 text-center"><h6>Treatment prescribed</h6><p>Tylenol which is perfectly fine</p></div>
+                                        <div class="f-modal-alert">
+
+                                            <div class="f-modal-icon f-modal-warning scaleWarning  d-none">
+                                                <span class="f-modal-body pulseWarningIns"></span>
+                                                <span class="f-modal-dot pulseWarningIns"></span>
+                                            </div>
+                                            <div class="f-modal-icon f-modal-success animate">
+                                                <span class="f-modal-line f-modal-tip animateSuccessTip"></span>
+                                                <span class="f-modal-line f-modal-long animateSuccessLong"></span>
+                                                <div class="f-modal-placeholder"></div>
+                                                <div class="f-modal-fix"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <div id="en4" class="tab-pane fade enrichment-content">
+
+
+                    Next Document
+
+
+                </div>
 
 
             </div>
-
-            <div id="en2" class="tab-pane fade enrichment-content">
-
-
-                Next Document
-
-
-            </div>
-
-            <div id="en3" class="tab-pane fade enrichment-content">
-
-
-                Next Document
-
-
-            </div>
-
-            <div id="en4" class="tab-pane fade enrichment-content">
-
-
-                Next Document
-
-
-            </div>
-
-
         </div>
-        <div id="c3" class="tab-pane fade"><section class="mt-4"><h2>Claim Details</h2></section></div>
-        <div id="c4" class="tab-pane fade"><section class="mt-4"><h2>Vehicle Details</h2></section></div>
+        <div id="c3" class="tab-pane fade"><section>
+            
+            
+            
+            <h2 class="mb-4">Claim Details</h2>
+               
+            <div class="row">
+                <div class="col-md-4 card-claims">
+                    <div class="card ">
+                        <div class="card-header"><h3>TITULAIRE DE LA POLICE</h3></div>
+                        <div class="card-body claim-details-card">
+
+
+                            <div class="row">
+                                <div class="col-md-6"><h6>NOM</h6></div>
+                                <div class="col-md-6"><strong>Yanael Barbier</strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><h6>Address</h6></div>
+                                <div class="col-md-6"><strong>Rue de la Ladhenes 5330 ASSESSE</strong></div>
+                            </div>
+
+                            <div class="subdetails mt-3 p-2">
+
+
+                                <div class="row">
+                                    <div class="col-md-6">NOM</div>
+                                    <div class="col-md-6">Yanael Barbier</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Address</div>
+                                    <div class="col-md-6">Rue de la Ladhenes 5330 ASSESSE</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 card-claims">
+                    <div class="card ">
+                        <div class="card-header"><h3>TITULAIRE DE LA POLICE</h3></div>
+                        <div class="card-body claim-details-card">
+
+
+                            <div class="row">
+                                <div class="col-md-6"><h6>NOM</h6></div>
+                                <div class="col-md-6"><strong>Yanael Barbier</strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><h6>Address</h6></div>
+                                <div class="col-md-6"><strong>Rue de la Ladhenes 5330 ASSESSE</strong></div>
+                            </div>
+
+                            <div class="subdetails subdetails-green mt-3 p-2">
+
+
+                                <div class="row">
+                                    <div class="col-md-6">NOM</div>
+                                    <div class="col-md-6 text-right">Yanael Barbier</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Address</div>
+                                    <div class="col-md-6 text-right">Rue de la Ladhenes 5330 ASSESSE</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card-claims">
+                    <div class="card ">
+                        <div class="card-header"><h3>TITULAIRE DE LA POLICE</h3></div>
+                        <div class="card-body claim-details-card">
+
+
+                            <div class="row">
+                                <div class="col-md-6"><h6>NOM</h6></div>
+                                <div class="col-md-6 text-right"><strong>Yanael Barbier</strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><h6>Address</h6></div>
+                                <div class="col-md-6 text-right"><strong>Rue de la Ladhenes 5330 ASSESSE</strong></div>
+                            </div>
+
+                            <div class="subdetails subdetails-grey mt-3 p-2">
+
+
+                                <div class="row">
+                                    <div class="col-md-6">NOM</div>
+                                    <div class="col-md-6 text-right">Yanael Barbier</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Address</div>
+                                    <div class="col-md-6 text-right">Rue de la Ladhenes 5330 ASSESSE</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+               
+               
+               
+               </section></div>
+        <div id="c4" class="tab-pane fade">
+            <section>
+                <h2 class="mb-4">Vehicle Details</h2>
+                <div class="row">
+                    <div class="col-md-12 card-claims">
+                        <div class="card ">
+                            <div class="card-header"><h3>VÉHICULE DU TITULAIRES</h3></div>
+                            <div class="card-body claim-details-card">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-md-6"><h6>NOM</h6></div>
+                                                    <div class="col-md-6 text-right"><strong>Peugeot 308</strong></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6"><h6>MARQUE:</h6></div>
+                                                    <div class="col-md-6 text-right"><strong>Peugeot</strong></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-6"><h6>DATE D'INSCRIPTION:</h6></div>
+                                                    <div class="col-md-6 text-right"><strong></strong></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6"><h6>VDS:</h6></div>
+                                                    <div class="col-md-6 text-right"><strong></strong></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="subdetails subdetails-grey">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6"><h6>TYPE DE CARBURANT: </h6></div>
+                                                        <div class="col-md-6 text-right"><strong>Gasoline</strong></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6>
+                                                                TRANSMISSION:
+                                                            </h6>
+                                                        </div>
+                                                        <div class="col-md-6 text-right">
+                                                            <strong>
+                                                                5-Speed Manual
+                                                            </strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6"><h6>ESTIMATED MILEAGE:</h6></div>
+                                                        <div class="col-md-6 text-right"><strong></strong></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6"><h6>ANNÉE MODÉLE::</h6></div>
+                                                        <div class="col-md-6 text-right"><strong>2005</strong></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
         <div id="c5" class="tab-pane fade">
 
 
@@ -540,10 +923,14 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Lawyer Letter</a>
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab"><span class="badge success">
+    <i class="fa fa-check-circle"></i>
+</span>Lawyer Letter</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="tab" role="tab">Repair invoice</a>
+                            <a href="#" class="nav-link" data-toggle="tab" role="tab"><span class="badge warning mr-2">
+    <i class="fa fa-exclamation-triangle"></i>
+</span>Repair invoice</a>
                         </li>
 
                     </ul>

@@ -1,0 +1,336 @@
+﻿<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Anna Notovska">
+
+    <title>Sprout Dashboard</title>
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#F57F20">
+    <link rel="icon" href="images/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+    <!-- Custom styles from Anna -->
+    <link href="css/start.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide" id="header">
+        <div class="header-section">
+
+            <div class="container-header" id="logoAndNav">
+                <div class="container-header" id="logoAndNav">
+
+                    <nav class="navbar navbar-expand-lg">
+                        <a type="button" class="sidebar-toggler" id="sidebarCollapse">
+                            <span class="sidebar-toggler-default">
+                                <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+                                </svg>
+                            </span>
+                            <!--<span class="sidebar-toggler-toggled">
+                                <svg width="14" height="14" viewBox="0 0 18 18" >
+                                    <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+                                </svg>
+                            </span>-->
+                        </a>
+                        <a class="navbar-brand" href="index.html" aria-label="Front">
+                            <img src="images/logo.svg" alt="CMS" class="d-block mt-2 logo" />
+                        </a>
+
+
+                        <nav id="leftBar">
+
+                            <ul>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="icon icon-dashboard">
+
+
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="selected">
+                                    <a href="#">
+                                        <span class="icon icon-motor">
+
+
+                                        </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+
+                        </nav>
+
+
+                        <div id="navBar" class="collapse navbar-collapse">
+
+                            <div class="navbar-nav ml-auto">
+
+                                <ul class="navbar-nav">
+
+                                    <li class="nav-item dropdown"><a href="#" class="nav-icon"><div class="position-relative"><img src="images/iconbell.svg" /><span class="indicator">4</span></div></a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                                            <img src="images/avatar.png" class="avatar img-fluid rounded-circle mr-1" alt="Greg Cadel"> <span class="text-dark">Greg Cadel</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <ul>
+                                                <li class="dropdown-item user-header bglight">
+                                                    <p>
+                                                        ACB Investigator
+                                                        <small>(Investigation Department)</small>
+                                                    </p>
+                                                </li>
+                                                <li class="dropdown-item">  <a href="#">Sign out</a></li>
+                                            </ul>
+
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </nav>
+
+                </div>
+            </div>
+    </header>
+    
+    
+
+
+    <main id="claimsContent" >
+        
+        <section id="claim-history" class="mt-2">
+            
+              
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center text-md-left mb-4">
+                                Previous Claims
+                            </h2>
+
+                            <table class="w-100 claimstable">
+                                <tbody class="border-right-blue">
+                                    <tr class="data-item">
+                                        <td class="case-number">
+                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                F535892
+                                            </a>
+                                        </td>
+                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                        <td data-v-27a102ae="">
+                                            <p data-v-27a102ae="" class="size-m">
+                                                <div class="tip">
+
+                                                    <span class="tiptext"> Treatment not covered</span>
+                                                </div>
+
+
+                                            </p>
+                                        </td>
+
+
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                    </tr>
+
+                                </tbody>
+                                <tbody class="border-right-green">
+                                    <tr class="data-item">
+                                        <td class="case-number">
+                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                F535892
+                                            </a>
+                                        </td>
+                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                        <td data-v-27a102ae="">
+                                            <p data-v-27a102ae="" class="size-m">
+                                                <div class="tip">
+
+                                                    <span class="tiptext"> Treatment not covered</span>
+                                                </div>
+
+
+                                            </p>
+                                        </td>
+
+
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check "></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                    </tr>
+
+                                </tbody>
+                                <tbody class="border-right-orange">
+                                    <tr class="data-item">
+                                        <td class="case-number">
+                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                F535892
+                                            </a>
+                                        </td>
+                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                        <td data-v-27a102ae="">
+                                            <p data-v-27a102ae="" class="size-m">
+                                                <div class="tip">
+
+                                                    <span class="tiptext"> Treatment not covered</span>
+                                                </div>
+
+
+                                            </p>
+                                        </td>
+
+
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+
+
+                                    </tr>
+
+                                </tbody>
+
+
+                                <tbody class="border-right-red">
+                                    <tr class="data-item">
+                                        <td class="case-number">
+                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
+                                                F535892
+                                            </a>
+                                        </td>
+                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+                                        <td data-v-27a102ae="">
+                                            <p data-v-27a102ae="" class="size-m">
+                                                <div class="tip">
+
+                                                    <span class="tiptext"> Treatment not covered</span>
+                                                </div>
+
+
+                                            </p>
+                                        </td>
+
+
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation "></span></td>
+
+
+
+                                    </tr>
+
+                                </tbody>
+
+
+
+                            </table>
+
+
+
+                        </div>
+                    </div>
+             
+        </section>
+        
+    </main>
+
+
+
+
+
+
+    <footer class="d-none">
+        <div class="container d-flex">
+
+
+            <span class="d-block ml-auto copyright">2020 &copy;Copyright Sprout</span>
+
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js" ></script>
+            
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#leftBar').toggleClass('active');
+                $(this).toggleClass("toggled");
+                $("#mainContent").toggleClass("active");
+                $("#claimsummary").toggleClass("active");
+
+                $("#subheadernav").toggleClass("active");
+            });
+
+
+            $('#claimcollapse').on('click', function (e) {
+
+                $(this).toggleClass("toggled");
+                $("#mainContent").toggleClass("enlarge");
+                $("#claimsummary").toggleClass("close");
+
+                $("#subheadernav").toggleClass("enlarge");
+
+                e.preventDefault();
+            });
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+
+            var stepper = document.querySelector('#stepper')
+            stepperForm = new Stepper(stepper, {
+                linear: false,
+                animation: true
+            })
+
+
+
+
+        });
+
+
+    </script>
+
+</body>

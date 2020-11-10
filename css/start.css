@@ -3331,6 +3331,9 @@ div.dataTables_wrapper div.dataTables_length label select {
 table.dataTable.no-footer {
   border-bottom: 1px solid #ebeef8;
 }
+.mdc-data-table {
+  background: transparent !important;
+}
 .dataTable {
   border-collapse: separate !important;
   border-spacing: 0px 12px !important;

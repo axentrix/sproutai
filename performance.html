@@ -57,16 +57,16 @@
 
                             <ul>
 
-                                <li>
-                                    <a href="#">
+                                <li class="selected">
+                                    <a href="performance.html">
                                         <span class="icon icon-dashboard">
 
 
                                         </span>
                                     </a>
                                 </li>
-                                <li class="selected">
-                                    <a href="#">
+                                <li >
+                                    <a href="claims.html">
                                         <span class="icon icon-motor">
 
 
@@ -120,52 +120,227 @@
     <div class="subheader subheader-margin d-flex">
 
         <nav class="navbar navbar-expand-lg" id="subheadernav">
-            <ul class="nav nav-pills substeps" role="tablist">
+            <ul class="nav nav-pills substeps justify-content-center" role="tablist">
 
 
 
                 <li class="nav-item">
-                    <a href="#c1" class="nav-link active" data-toggle="tab" href="#c1" role="tab" aria-selected="true"><span class="icon icon-context"></span>Context</a>
+                    <a href="#c1" class="nav-link active" data-toggle="tab" href="#c1" role="tab" aria-selected="true">Performance Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#c2" class="nav-link" data-toggle="tab" href="#c2" role="tab"><span class="icon icon-enrichments"></span>Enrichments</a>
+                    <a href="#c2" class="nav-link" data-toggle="tab" href="#c2" role="tab">Investigation Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#c3" class="nav-link" data-toggle="tab" href="#c3" role="tab"><span class="icon icon-claimdetails"></span>Claim Details</a>
+                    <a href="#c3" class="nav-link" data-toggle="tab" href="#c3" role="tab">Claim Handler Performance</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#c4" class="nav-link" data-toggle="tab" href="#c4" role="tab"><span class="icon icon-vehicledetails"></span>Vehicle Details</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#c5" class="nav-link" data-toggle="tab" href="#c5" role="tab"><span class="icon icon-attachments"></span>Attachments</a>
-                </li>
+
             </ul>
         </nav>
 
     </div>
-    
 
 
-    <main id="mainContent" class="tab-content">
+
+    <main id="performance" class="tab-content">
         <div id="c1" class="tab-pane fade show active">
-            
+
+
+            <div role="tabpanel" aria-labelledby="performance-tab" class="tab-pane fade show active">
+                <div data-v-51739e25="" class="container">
+
+                    <div data-v-51739e25="" class="row first-row text-center">
+                        <div class="col-md-12"><h2 class="whitetitle">Performance</h2></div>
+                        <div data-v-51739e25="" class="col-md-4 mb-4">
+                            <div data-v-51739e25="" class="dash-panel">
+                                <header data-v-51739e25="">
+                                    <h2 data-v-51739e25="">Total Claims volume</h2>
+                                    <span class="trend">+3%<img src="images/arrowup.svg"></span>
+
+                                </header>
+                                <div class="dash-content">
+
+
+                                    <div class="number"><img src="images/claim.svg" /><p id="claim" class="statistic">1400</p></div>
+                                    <img src="images/curve1.svg" />
+
+                                </div>
+                                <footer class="legend">
+                                    <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                                    <div><a href="#"><span class="icon icon-arrow"></span></a></div>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div data-v-51739e25="" class="col-md-4 mb-4">
+                            <div data-v-51739e25="" class="dash-panel">
+                                <header data-v-51739e25="">
+                                    <h2 data-v-51739e25="">Average turnaround per claim</h2>
+                                    <span class="trend">+3%<img src="images/arrowup.svg"></span>
+                                </header>
+                                <div class="dash-content">
+
+
+                                    <div class="number"><img src="images/turnaround.svg" /><p id="claim" class="statistic">5</p><p class="text">Days</p></div>
+                                    <img src="images/curve1.svg" />
+
+                                </div>
+                                <footer class="legend">
+                                    <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                                    <div><a href="#"><span class="icon icon-arrow"></span></a></div>
+                                </footer>
+                            </div>
+                        </div>
+                        <div data-v-51739e25="" class="col-md-4 mb-4">
+                            <div data-v-51739e25="" class="dash-panel">
+                                <header data-v-51739e25="">
+                                    <h2 data-v-51739e25="">Average amount of steps per claim</h2>
+                                    <span class="trend">-3%<img src="images/arrowdown.svg"></span>
+                                </header>
+
+                                <div class="dash-content">
+
+
+                                    <div class="number"><img src="images/steps.svg" /><p id="claim" class="statistic">6</p><p class="text">Days</p></div>
+                                    <img src="images/curve1.svg" />
+
+                                </div>
+
+
+                                <footer class="legend">
+                                    <div class="mt-1"><div class="legendcircle"></div>Latest trend</div>
+                                    <div><a href="#"><span class="icon icon-arrow"></span></a></div>
+                                </footer>
+
+
+                            </div>
+                        </div>
+                    </div>
 
 
 
-            
 
-            
+
+
+                    <div class="row second-row">
+                        <div class="d-flex col-xxl-7 col-md-6">
+                            <div class="flex-fill w-100 card">
+                                <div class="card-header">
+                                    <div class="card-actions float-right">
+                                        <span class="cursor-pointer mr-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="23 4 23 10 17 10"></polyline>
+                                                <polyline points="1 20 1 14 7 14"></polyline>
+                                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="d-inline-block dropdown">
+                                            <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="12" cy="12" r="1"></circle>
+                                                    <circle cx="12" cy="5" r="1"></circle>
+                                                    <circle cx="12" cy="19" r="1"></circle>
+                                                </svg>
+                                            </a><div class="dropdown-menu mt-3" style="">
+                                                <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last Month</button>
+                                                <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last Week</button>
+                                                <button type="button" tabindex="0" role="menuitem" class="dropdown-item">Last 3 Months</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="mb-0 card-title">Recent Activity</h5>
+                                </div>
+                                <div class="py-3 card-body">
+                                    <div class="chart chart-sm">
+                                        <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                        <div class="chartjs-size-monitor">
+                                            <div class="chartjs-size-monitor-expand">
+                                                <div class=""></div>
+                                            </div><div class="chartjs-size-monitor-shrink">
+                                                <div class=""></div>
+                                            </div>
+                                        </div>
+                                        <canvas id="recentactivity" height="212" width="500" class="chartjs-render-monitor" style="display: block; width: 500px; height: 212px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex col-xxl-5 col-md-6" id="small-stats">
+                            <div class="w-100">
+                                <div class="row">
+                                    <div class="col-sm-6 d-flex">
+
+                                        <div class="card flex-fill">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                                    <div class="mt-0 col"><h5 class="card-title">My Cases Summary</h5></div>
+                                                    <canvas id="pie" width="245" height="245" class="chartjs-render-monitor" style="display: block; width: 245px; height: 245px;"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-sm-6">
+                                        <div class="card redcard">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="mt-0 col"><h5 class="card-title whitetitle">Claims Settled</h5></div>
+                                                    <div class="col-auto col">
+                                                        <div>
+                                                            <div class="icon-circle-solid icon-circle-solid-white icon-check bg-primary-dark">
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><h3 class="display-5 mt-1 mb-3">1</h3><div class="mb-0"><a href="#">View case</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="mt-0 col">
+                                                        <h5 class="card-title">Investigation Stage</h5>
+                                                    </div>
+                                                        <div >
+                                                            <div class="icon k">
+                                                                <img src="images/investigation.svg">
+                                                            </div>
+                                                        </div>
+                                                   
+                                                </div>
+                                                <h3 class="display-5 mt-1 mb-3">4</h3>
+                                                <div class="mb-0">
+                                                    <a href="#">View Cases</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
         </div>
 
 
         <div id="c2" class="tab-pane fade">
-            
-            
+
+
         </div>
         <div id="c3" class="tab-pane fade"></div>
-        
-        
+
+
     </main>
 
 
@@ -185,8 +360,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js" ></script>
-            
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+
 
 
     <script type="text/javascript">
@@ -194,35 +374,135 @@
             $('#sidebarCollapse').on('click', function () {
                 $('#leftBar').toggleClass('active');
                 $(this).toggleClass("toggled");
-                $("#mainContent").toggleClass("active");
-                $("#claimsummary").toggleClass("active");
+                $("#performance").toggleClass("active");
 
                 $("#subheadernav").toggleClass("active");
             });
 
 
-            $('#claimcollapse').on('click', function (e) {
-
-                $(this).toggleClass("toggled");
-                $("#mainContent").toggleClass("enlarge");
-                $("#claimsummary").toggleClass("close");
-
-                $("#subheadernav").toggleClass("enlarge");
-
-                e.preventDefault();
-            });
 
             $('[data-toggle="tooltip"]').tooltip();
 
 
 
-            var stepper = document.querySelector('#stepper')
-            stepperForm = new Stepper(stepper, {
-                linear: false,
-                animation: true
+            // These are the options that I'm going to be using on each statistic
+            var options = {
+                useEasing: true,
+                useGrouping: true,
+                separator: ",",
+                decimal: "."
+            };
+
+            // Find all Statistics on page, put them inside a variable
+            var statistics = $(".statistic");
+
+            // For each Statistic we find, animate it
+            statistics.each(function (index) {
+                // Find the value we want to animate (what lives inside the p tags)
+                var value = $(statistics[index]).html();
+                // Start animating
+                var statisticAnimation = new CountUp(statistics[index], 0, value, 0, 5, options);
+                statisticAnimation.start();
+            });
+
+
+
+            new Chart(document.getElementById("pie"), {
+                "type": "doughnut", options: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: {
+                            fontColor: '#B3B6CE',
+                            fontFamily: 'Rubik'
+                        }
+                    }
+                }, "data": {
+                    "labels": ["Repudiation", "Investigation", "Closed"], "datasets": [{
+                        "label": "My First Dataset",
+                        "data": [300, 50, 100], "backgroundColor": ["#E42D53", "#F6AA37", "#25BF85"]
+                    }]
+                }
+            });
+
+
+            var ctx = document.getElementById('recentactivity')
+            // eslint-disable-next-line no-unused-vars
+            var myChart = new Chart(ctx, {
+                type: 'line',
+               
+                data: {
+                    labels: [
+                        'April',
+                        'May',
+                        'June'
+
+                    ],
+                    datasets: [{
+                        label: "Repudiation",
+                        data: [
+                            23,
+                            14,
+                            34
+
+                        ],
+                        lineTension: 0.8,
+                        backgroundColor: 'transparent',
+                        borderColor: ' #E42D53',
+                        borderWidth: 2,
+                        pointBackgroundColor: ' #E42D53'
+                    },
+                    {
+                        label: "Investigation",
+                        data: [
+                            83,
+                            104,
+                            304
+
+                        ],
+                        lineTension: 0.8,
+                        backgroundColor: 'transparent',
+                        borderColor: '#F6AA37',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#F6AA37'
+                    },
+                    {
+                        label: "Settled",
+                        data: [
+                            33,
+                            54,
+                            22
+
+                        ],
+                        lineTension: 0.8,
+                        backgroundColor: 'transparent',
+                        borderColor: '#25BF85',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#25BF85'
+                    }
+
+                    ]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: false
+                            }
+                        }]
+                    },
+                   
+                        legend: {
+                            display: true,
+                            position: 'bottom',
+                            labels: {
+                                fontColor: '#B3B6CE',
+                                fontFamily: 'Rubik'
+                            }
+                        }
+                   
+                }
             })
-
-
 
 
         });

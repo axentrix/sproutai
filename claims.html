@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css" />
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -22,7 +23,7 @@
     <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#F57F20">
     <link rel="icon" href="images/favicons/favicon.ico">
     <meta name="theme-color" content="#ffffff">
-   
+
     <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
     <!-- Custom styles from Anna -->
     <link href="css/start.css" rel="stylesheet">
@@ -58,7 +59,7 @@
                             <ul>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="performance.html">
                                         <span class="icon icon-dashboard">
 
 
@@ -66,7 +67,7 @@
                                     </a>
                                 </li>
                                 <li class="selected">
-                                    <a href="#">
+                                    <a href="claims.html">
                                         <span class="icon icon-motor">
 
 
@@ -117,158 +118,201 @@
                 </div>
             </div>
     </header>
-    
-    
-
-
-    <main id="claimsContent" >
-        
-        <section id="claim-history" class="mt-2">
-            
-              
-
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="text-center text-md-left mb-4">
-                                Previous Claims
-                            </h2>
-
-                            <table class="w-100 claimstable">
-                                <tbody class="border-right-blue">
-                                    <tr class="data-item">
-                                        <td class="case-number">
-                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
-                                                F535892
-                                            </a>
-                                        </td>
-                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
-                                        <td data-v-27a102ae="">
-                                            <p data-v-27a102ae="" class="size-m">
-                                                <div class="tip">
-
-                                                    <span class="tiptext"> Treatment not covered</span>
-                                                </div>
-
-
-                                            </p>
-                                        </td>
-
-
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
 
 
 
-                                    </tr>
 
-                                </tbody>
-                                <tbody class="border-right-green">
-                                    <tr class="data-item">
-                                        <td class="case-number">
-                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
-                                                F535892
-                                            </a>
-                                        </td>
-                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
-                                        <td data-v-27a102ae="">
-                                            <p data-v-27a102ae="" class="size-m">
-                                                <div class="tip">
+    <main id="claimsContent">
 
-                                                    <span class="tiptext"> Treatment not covered</span>
-                                                </div>
-
-
-                                            </p>
-                                        </td>
-
-
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check "></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+        <section id="claims" class="mt-10">
 
 
 
-                                    </tr>
 
-                                </tbody>
-                                <tbody class="border-right-orange">
-                                    <tr class="data-item">
-                                        <td class="case-number">
-                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
-                                                F535892
-                                            </a>
-                                        </td>
-                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
-                                        <td data-v-27a102ae="">
-                                            <p data-v-27a102ae="" class="size-m">
-                                                <div class="tip">
+            <div class="row">
+                <div class="col-md-10">
+                    <h2 class="text-center text-md-left mb-4"></h2>
+                    <div class="mdc-data-table">
+                        <table id="claims_table" class="table table-striped  table-sm dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="dtBasicExample_info" style="width: 100%;">
+                            <thead>
+                                <tr role="row">
+                                    <th class="th-sm sorting_asc" tabindex="0" aria-controls="mycases_table" style="width:80px;" rowspan="1" colspan="1" aria-label="Claim NB" aria-sort="ascending">
+                                        Claim NB
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" style="width:180px;" rowspan="1" colspan="1" aria-label="Claim Handler">
+                                        Claim Handler
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" style="width:80px;" rowspan="1" colspan="1" aria-label="Claim Deadline">
+                                        Deadline
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Complexity">
+                                        Complexity
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Reason" style="width:120px;">
+                                        Reason
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Claims Missing" style="width:30px;">
+                                        <span class="icon icon-circle icon-missing  disabled"></span>
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Claims to Investigation" style="width:30px;">
+                                        <span class="icon icon-circle icon-investigation  disabled"></span>
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Claims Settled" style="width:30px;">
+                                        <span class="icon icon-circle icon-check  disabled"></span>
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Claims to Repudiation" style="width:30px;">
+                                        <span class="icon icon-circle icon-repudiation  disabled"></span>
+                                    </th>
+                                    <th class="th-sm sorting" tabindex="0" aria-controls="mycases_table" rowspan="1" colspan="1" aria-label="Recommended Action" style="width:120px;">
+                                        Recommended Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="data-item">
+                                    <td class="case-number">
+                                        <a data-v-27a102ae="" href="index.html" class="">
+                                            F535892
+                                        </a>
+                                    </td>
+                                    <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
 
-                                                    <span class="tiptext"> Treatment not covered</span>
-                                                </div>
+                                    <td><small>Oct. 24, 2020</small><strong class="warning">5 days left</strong></td>
+                                    <td><div class="levelbar"><ul><li></li><li></li></ul></div></td>
 
+                                    <td data-v-27a102ae="">
+                                        <p data-v-27a102ae="" class="size-m">
+                                            <div class="tip">
 
-                                            </p>
-                                        </td>
-
-
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
-
-
-
-                                    </tr>
-
-                                </tbody>
-
-
-                                <tbody class="border-right-red">
-                                    <tr class="data-item">
-                                        <td class="case-number">
-                                            <a data-v-27a102ae="" href="#/claim/F535892" class="">
-                                                F535892
-                                            </a>
-                                        </td>
-                                        <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
-                                        <td data-v-27a102ae="">
-                                            <p data-v-27a102ae="" class="size-m">
-                                                <div class="tip">
-
-                                                    <span class="tiptext"> Treatment not covered</span>
-                                                </div>
-
-
-                                            </p>
-                                        </td>
-
-
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
-                                        <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation "></span></td>
-
+                                                <span class="tiptext"> Treatment not covered</span>
+                                            </div>
 
 
-                                    </tr>
-
-                                </tbody>
-
+                                        </p>
+                                    </td>
 
 
-                            </table>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing  disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check "></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+                                    <td class="border-right-green"><a href="index.html" class="btn btn-action">Review dates and repudiate <span class="icon icon-arrow"></span></a></td>
+
+                                </tr>
+
+
+                                <tr class="data-item">
+                                    <td class="case-number">
+                                        <a data-v-27a102ae="" href="index.html" class="">
+                                            F535890
+                                        </a>
+                                    </td>
+                                    <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+
+                                    <td><small>Oct. 24, 2020</small><strong class="warning">5 days left</strong></td>
+                                    <td><div class="levelbar"><ul><li></li><li></li></ul></div></td>
+
+                                    <td data-v-27a102ae="">
+                                        <p data-v-27a102ae="" class="size-m">
+                                            <div class="tip">
+
+                                                <span class="tiptext"> Treatment not covered</span>
+                                            </div>
+
+
+                                        </p>
+                                    </td>
+
+
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation "></span></td>
+
+                                    <td class="border-right-blue"><a href="index.html" class="btn btn-action">Review dates and repudiate <span class="icon icon-arrow"></span></a></td>
+
+                                </tr>
+                                <tr class="data-item">
+                                    <td class="case-number">
+                                        <a data-v-27a102ae="" href="index.html" class="">
+                                            F535891
+                                        </a>
+                                    </td>
+                                    <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+
+                                    <td><small>Oct. 24, 2020</small><strong class="warning">5 days left</strong></td>
+                                    <td><div class="levelbar"><ul><li></li></ul></div></td>
+
+                                    <td data-v-27a102ae="">
+                                        <p data-v-27a102ae="" class="size-m">
+                                            <div class="tip">
+
+                                                <span class="tiptext"> Treatment not covered</span>
+                                            </div>
+
+
+                                        </p>
+                                    </td>
+
+
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+                                    <td class="border-right-red"><a href="index.html" class="btn btn-action">Review dates and repudiate <span class="icon icon-arrow"></span></a></td>
+
+                                </tr>
+
+
+                                <tr class="data-item">
+                                    <td class="case-number">
+                                        <a data-v-27a102ae="" href="index.html" class="">
+                                            F535893
+                                        </a>
+                                    </td>
+                                    <td data-v-27a102ae=""><p data-v-27a102ae="">D.POTTER</p><small>123 Department</small></td>
+
+                                    <td><small>Oct. 24, 2020</small><strong class="warning">5 days left</strong></td>
+                                    <td><div class="levelbar"><ul><li></li></ul></div></td>
+
+                                    <td data-v-27a102ae="">
+                                        <p data-v-27a102ae="" class="size-m">
+                                            <div class="tip">
+
+                                                <span class="tiptext"> Treatment not covered</span>
+                                            </div>
+
+
+                                        </p>
+                                    </td>
+
+
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-missing disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-check  disabled"></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-investigation "></span></td>
+                                    <td data-v-27a102ae="" class="icons-col"><span class="icon icon-circle icon-repudiation disabled"></span></td>
+
+                                    <td class="border-right-orange"><a href="index.html" class="btn btn-action">Review dates and repudiate <span class="icon icon-arrow"></span></a></td>
+
+                                </tr>
+                            </tbody>
 
 
 
-                        </div>
+
+
+
+                        </table>
+
                     </div>
-             
+
+                </div>
+            </div>
+
         </section>
-        
+
     </main>
 
 
@@ -285,11 +329,13 @@
         </div>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js" ></script>
-            
+    <script src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
+
 
 
     <script type="text/javascript">
@@ -319,11 +365,7 @@
 
 
 
-            var stepper = document.querySelector('#stepper')
-            stepperForm = new Stepper(stepper, {
-                linear: false,
-                animation: true
-            })
+           
 
 
 
@@ -332,5 +374,24 @@
 
 
     </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#claims_table').DataTable();
+            $('.dataTables_length').addClass('bs-select');
+
+            $('#claims_table_filter input').addClass('form-control form-control-sm');
+            $('#claims_table_filter label').addClass(' input-group');
+
+            $("#claims_table_length").find("select").addClass("custom-select custom-select-sm form-control form-control-sm");
+            $("#claims_table_length").find("label").addClass("input-group")
+        });
+
+
+
+
+
+
+    </script>
 </body>

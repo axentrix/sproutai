@@ -785,7 +785,7 @@ footer a:hover {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: .5rem 0;
+  padding: 0!important;
   margin: .125rem 0 0;
   font-size: .875rem;
   color: #495057;
@@ -1065,7 +1065,7 @@ footer .d-flex {
 }
 .badge.status {
   flex: 0 0 auto;
-  background: #75c8ce;
+  background: #b3b6ce;
   color: #ffffff;
 }
 .badge.warning {
@@ -1144,7 +1144,7 @@ footer .d-flex {
   width: 0;
   height: 0;
   top: 7px;
-  right: -16px;
+  right: -15px;
   box-sizing: border-box;
   border: 17px solid black;
   border-color: transparent transparent #fffaf3 #fffaf3;
@@ -1195,20 +1195,19 @@ footer .d-flex {
   color: #1db2a6;
 }
 .steps li.completed::after {
-  border-color: transparent transparent #ebeff6 #ebeff6;
+  border-color: transparent transparent #e6f5f6 #e6f5f6;
 }
 .steps li.current::before {
   position: absolute;
-  content: url("../images/currentstep.svg");
   width: 37px;
   height: 37px;
   bottom: -26px;
 }
 .steps li.stagecolor_5 {
-  background-color: #fab61c;
+  background-color: #b3b6ce;
 }
 .steps li.stagecolor_5::after {
-  border-color: transparent transparent #fab61c #fab61c;
+  border-color: transparent transparent #b3b6ce #b3b6ce;
 }
 .steps li.stagecolor_5:hover {
   background-color: #e6f5f6 !important;
@@ -2360,6 +2359,7 @@ h1 small {
 .claimstable tbody td.case-number a {
   color: #1f2240;
   font-weight: bold;
+  display: block;
 }
 .claimstable tbody td p {
   margin-bottom: 0px;
@@ -2368,8 +2368,14 @@ h1 small {
 .claimstable tbody td .icon {
   font-size: 18px;
 }
+.claimstable tbody td .icon.icon-missing {
+  font-size: smaller;
+}
+.claimstable tbody td .icon.icon-repudiation {
+  font-size: smaller;
+}
 .icons-col {
-  width: 60px;
+  width: 40px;
 }
 .icon-circle {
   border-radius: 50%;
@@ -2391,7 +2397,7 @@ h1 small {
   color: #ffffff;
 }
 .tip-check {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   position: relative;
   display: inline-block;
   /* If you want dots under the hoverable text */
@@ -2405,10 +2411,52 @@ h1 small {
   top: 100%;
   /* At the bottom of the tooltip */
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -15px;
+  border-width: 15px;
   border-style: solid;
   border-color: #ffffff transparent transparent transparent;
+}
+.tooltip-main {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+  background: #ffffff;
+  font-weight: 400;
+  border-radius: 4px;
+}
+.tooltip-qm {
+  float: left;
+  margin: -2px 0px 3px 4px;
+  font-size: 12px;
+}
+.tooltip-inner {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  max-width: 236px !important;
+  min-height: 36px;
+  font-size: 14px;
+  padding: 10px 15px 10px 20px;
+  background: #FFFFFF;
+  color: #1f2240;
+  text-align: left;
+}
+.tooltip.show {
+  opacity: 1;
+}
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #ffffff !important;
+}
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #ffffff !important;
+}
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #ffffff !important;
+}
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #ffffff !important;
 }
 .tip {
   position: relative;
@@ -2418,6 +2466,7 @@ h1 small {
   padding: 8px;
   font-weight: 400;
   border-radius: 4px;
+  font-size: 14px;
 }
 .tip:before {
   content: '';
@@ -2439,6 +2488,7 @@ h1 small {
 }
 .icon-investigation {
   color: #f6aa37;
+  font-size: large;
 }
 .icon-investigation.icon-circle {
   border-color: #f6aa37;
@@ -2731,11 +2781,20 @@ h6 {
   text-transform: uppercase;
   color: #2b2d46;
 }
+.dropdown-item {
+  padding-left: 10px;
+}
+.dropdown-item small {
+  display: block;
+}
+.dropdown-item span.icon {
+  margin-left: auto;
+}
 .dropdown-item.active,
 .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #1db2a6;
+  background-color: #fffaf3;
 }
 .enlarge .enrichheader ul li a.active + .enrichments li {
   flex: 1;
@@ -2752,26 +2811,50 @@ h6 {
   padding: .5rem .5rem;
 }
 .claim-details-card {
+  padding-top: 5px;
   font-size: 13px;
+}
+.claim-details-card > .row {
+  margin-top: 20px;
 }
 .claim-details-card h6 {
   font-size: 12px;
 }
-.claim-details-card .row:nth-child(2n) {
+.claim-details-card .text-right {
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+.claim-details-card .transparent {
+  background: transparent !important;
+}
+.claim-details-card .row:nth-child(2n+1) {
   background: #f6f8fc;
 }
-.card-claims [class*='col-md-'] {
-  border-left: solid 2px #ffffff;
+.claim-details-card .row:nth-child(2n) {
+  background: #ffffff;
+}
+.claim-details-card .subdetails .row:nth-child(2n) {
+  background: unset;
+}
+.card-claims h3 {
+  text-transform: uppercase;
 }
 .card-claims:nth-child(1) .card-header {
   background: #fffaf3;
+}
+.card-claims .card-header.third-party {
+  background: #e6f5f6;
 }
 .card-claims:nth-child(2) .card-header {
   background: #e6f5f6;
 }
 .card-claims h6 {
-  margin-bottom: 0px;
-  line-height: 28px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  line-height: 18px;
 }
 .card-claims .card-header h3 {
   font-weight: normal;
@@ -2936,7 +3019,7 @@ h6 {
   transform: rotate(-45deg);
 }
 .f-modal-alert .f-modal-icon.f-modal-warning {
-  border-color: #F8BB86;
+  border-color: #e42d53;
 }
 .f-modal-alert .f-modal-icon.f-modal-warning:before {
   animation: pulseWarning 2s linear infinite;
@@ -3121,12 +3204,12 @@ h6 {
 }
 @keyframes pulseWarning {
   0% {
-    background-color: #f6aa37;
+    background-color: #e42d53;
     transform: scale(1);
     opacity: 0.5;
   }
   30% {
-    background-color: #f6aa37;
+    background-color: #e42d53;
     transform: scale(1);
     opacity: 0.5;
   }
@@ -3141,7 +3224,7 @@ h6 {
     background-color: #ffffff;
   }
   100% {
-    background-color: #f6aa37;
+    background-color: #e42d53;
   }
 }
 .subheader-margin nav {
@@ -3407,4 +3490,135 @@ table.dataTable tbody td {
   border: 1px solid #26dccd;
   background: #e6f5f6;
   font-size: 12px;
+}
+.dropdown-toggle:after {
+  display: none !important;
+}
+#newclaimsmenu {
+  list-style: none;
+}
+#newclaimsmenu li {
+  padding-top: 10px;
+  box-shadow: 0px 4px 3px 0 rgba(0, 0, 0, 0.1);
+}
+#newclaimsmenu li:last-child {
+  box-shadow: none;
+}
+#newclaimsmenu li.user-header {
+  box-shadow: none;
+}
+#newclaimsmenu li h6 {
+  margin: 0;
+}
+#newclaimsmenu li a:hover {
+  color: #000000;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+#stepper-claim .bs-stepper-header {
+  background: transparent;
+}
+#stepper-claim .bs-stepper-header button:hover {
+  background: transparent !important;
+}
+#stepper-claim .bs-stepper-header .step:first-child button {
+  padding-left: 0px;
+}
+#stepper-claim .bs-stepper-header .step:last-child button {
+  padding-right: 0px;
+}
+#stepper-claim .bs-stepper-header .bs-stepper-circle {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stepper-claim .bs-stepper-header .bs-stepper-circle .fa {
+  margin-right: 0px;
+}
+#stepper-claim .bs-stepper-header .bs-stepper-circle.completed {
+  background: #c1e6e9;
+}
+#stepper-claim .bs-stepper-header .bs-stepper-circle.current {
+  width: 48px;
+  height: 48px;
+  border: solid 5px #75c8ce;
+  background: #f9fdfd;
+  border-radius: 50%;
+}
+#hourglass rect {
+  fill: #fab61c;
+}
+#hourglass g {
+  fill: #1db2a6 !important;
+}
+#hourglass path {
+  stroke: #fab61c;
+}
+.bs-stepper-header {
+  position: relative;
+}
+.bs-stepper .line,
+.bs-stepper-line {
+  height: 0.5px;
+  background-color: #d4dbf0;
+}
+#treatment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#treatment ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#treatment .small-subheader {
+  background: #e6f5f6;
+  padding: 5px;
+}
+#treatment .small-subheader p {
+  font-size: 12px !important;
+  padding: 0;
+  margin: 0;
+}
+#treatment .collapsible-body p {
+  padding: 15px;
+  font-size: 14px;
+}
+#treatment .collapsible-header {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  border-bottom: solid 1px #ffffff;
+  padding: 5px 15px;
+  color: #ffffff;
+  background: #1db2a6;
+  transition: all 0.2s;
+}
+#treatment .collapsible-header:hover {
+  background: #1fbfb2;
+}
+#treatment .collapsible-header:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: #ffffff;
+}
+#treatment .collapsible-header.open:after {
+  content: "\f068";
+}
+.list-unstyled {
+  list-style: none;
+}
+#summary .row {
+  margin-top: 10px;
+}
+#summary [class*='col-md-'] {
+  padding-left: 0px;
+  padding-right: 0px;
 }

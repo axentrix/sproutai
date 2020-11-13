@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import 'glyphter.css';
 @import 'auto-glyphter.css';
+@import 'medical-glyphter.css';
+@import 'property-glyphter.css';
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
@@ -1176,7 +1178,8 @@ footer .d-flex {
   transition: all 0.3s;
 }
 .steps li.completed {
-  background: #e6f5f6;
+  background: #ffffff;
+  border: solid 2px #1db2a6;
 }
 .steps li.completed a::before {
   position: relative;
@@ -1328,7 +1331,8 @@ table thead tr th {
   border: solid 0px transparent !important;
 }
 .substeps a {
-  font-size: 14px;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: Rubik;
 }
 .substeps a.pastactivity {
@@ -2055,17 +2059,6 @@ select:hover {
   justify-content: center;
   align-items: center;
 }
-/*Circular*/
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 100px;
-  height: 100px;
-}
 .single-chart {
   display: flex;
   flex-direction: column;
@@ -2079,11 +2072,11 @@ select:hover {
 .circle-bg {
   fill: none;
   stroke: #ebeff6;
-  stroke-width: 3.8;
+  stroke-width: 1.8;
 }
 .circle {
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 1.8;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
 }
@@ -2252,6 +2245,10 @@ select:hover {
   z-index: 80;
   -webkit-transition: all 0.35s ease-in-out, left 0.35s ease-in-out;
   transition: all 0.35s ease-in-out, left 0.35s ease-in-out;
+  margin-left: 80px;
+}
+#performance.active {
+  margin-left: 0;
 }
 #performance section {
   width: 95%;
@@ -2556,7 +2553,7 @@ ul.enrichments {
   position: absolute;
   content: '\0050';
   left: 0;
-  font-size: 28px;
+  font-size: 22px;
   color: #1f2240;
 }
 .enrichheader ul li a:hover:before {
@@ -2566,7 +2563,7 @@ ul.enrichments {
   font-family: 'Glyphter';
   content: '\004f';
   position: absolute;
-  font-size: 24px;
+  font-size: 20px;
   left: 0;
   text-indent: 15px;
   display: inline-block;
@@ -2601,7 +2598,7 @@ ul.enrichments {
 .enrichheader ul li a.active + .enrichments li a {
   width: 100%;
   align-self: stretch;
-  font-size: 13px;
+  font-size: 12px;
   padding-left: 8px;
   padding-right: 8px;
   text-indent: 0px;
@@ -2620,8 +2617,15 @@ ul.enrichments {
 .enrichheader ul li a.active + .enrichments li a .badge {
   top: 0;
   right: 0 !important;
-  min-width: 14px !important;
-  left: 70% !important;
+  width: 14px !important;
+  height: 14px;
+  min-width: unset;
+  left: 80% !important;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.enrichheader ul li a.active + .enrichments li a .badge .fa {
+  margin-right: 0;
 }
 .enrichheader ul li a.active + .enrichments li a.active {
   color: #1f2240 !important;
@@ -2635,6 +2639,7 @@ ul.enrichments {
   background: #fffaf3;
 }
 .enrichheader ul li a.active + .enrichments li a .icon {
+  position: relative;
   text-align: center;
   font-size: 34px;
 }
@@ -2721,9 +2726,12 @@ ul.enrichments {
   color: #1f2240;
 }
 #docnav ul .badge {
-  left: -15px;
+  left: -17px;
   top: 5px;
   right: unset;
+}
+#docnav ul .badge .fa {
+  margin-right: 0;
 }
 #docnav ul ul .badge {
   left: unset;
@@ -2738,7 +2746,7 @@ ul.enrichments {
   color: #1f2240;
 }
 #enrichnav ul .badge {
-  left: -10px;
+  left: -15px;
   top: 5px;
   right: unset;
 }
@@ -3331,6 +3339,12 @@ h6 {
   font-size: 50px;
   font-weight: bold;
   font-family: "Rubik", sans-serif;
+  display: flex;
+  align-items: center;
+}
+.number img {
+  margin-top: -20px;
+  max-width: 50px;
 }
 .number .text {
   font-size: 14px;
@@ -3370,6 +3384,15 @@ h6 {
 }
 .icon-circle-solid-white {
   background: #ffffff;
+}
+#claims_table .icons-col {
+  width: 60px;
+}
+#claims_table .icons-col .icon-repudiation {
+  font-size: 14px;
+}
+#claims_table .icons-col .icon-missing {
+  font-size: 14px;
 }
 #claims_table tbody {
   width: 100%;
@@ -3621,4 +3644,61 @@ table.dataTable tbody td {
 #summary [class*='col-md-'] {
   padding-left: 0px;
   padding-right: 0px;
+}
+.single-chart {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background: #1db2a6;
+}
+.single-chart .statistic {
+  fill: #ffffff;
+  font-size: 8px;
+  font-family: Rubik;
+}
+.single-chart .statpercentage {
+  fill: #ffffff;
+  font-size: 4px;
+  font-family: Rubik;
+}
+.single-chart {
+  justify-content: center;
+}
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 240px;
+  max-height: 240px;
+}
+.circle-bg {
+  fill: none;
+  stroke: #ebeef8;
+  stroke-width: 1.8;
+}
+.circle {
+  fill: none;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart .circle {
+  stroke: #fab61c;
+}
+.percentage {
+  fill: #b3b6ce;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+.second-row h5 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }

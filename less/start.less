@@ -1,6 +1,8 @@
 ﻿@import 'variables.less';
 @import 'glyphter.css';
 @import 'auto-glyphter.css';
+@import 'medical-glyphter.css';
+@import 'property-glyphter.css';
 @charset "utf-8";
 body {
     font-family: "Rubik", "Segoe UI", "Helvetica Neue";
@@ -901,7 +903,8 @@ footer {
     }
 
     .steps li.completed {
-        background: @highlightcolordark;
+        background: @white;
+        border:solid 2px @maincolor;
 
         a::before {
             position: relative;
@@ -1107,7 +1110,8 @@ footer {
     .substeps {
 
         a {
-            font-size: 14px;
+            font-size: 13px;
+            text-transform:uppercase;
             font-family: Rubik;
 
             &.pastactivity {
@@ -1988,23 +1992,10 @@ select:active, select:hover {
     }
 }
 
-/*Circular*/
-.flex-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-}
 
 
 
-.circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 100px;
-    height: 100px;
 
-
-   
-}
 .single-chart{
   
     display:flex;
@@ -2020,12 +2011,12 @@ select:active, select:hover {
 .circle-bg {
     fill: none;
     stroke: @greybg;
-    stroke-width: 3.8;
+    stroke-width: 1.8;
 }
 
 .circle {
     fill: none;
-    stroke-width: 2.8;
+    stroke-width: 1.8;
     stroke-linecap: round;
     animation: progress 1s ease-out forwards;
 }
@@ -2234,7 +2225,12 @@ select:active, select:hover {
     z-index: 80;
     -webkit-transition: all .35s ease-in-out,left .35s ease-in-out;
     transition: all .35s ease-in-out,left .35s ease-in-out;
+    margin-left:80px;
 
+    &.active{
+
+        margin-left:0;
+    }
     section {
         width: 95%;
         padding-left: 40px;
@@ -2597,7 +2593,7 @@ h1 {
                     display: inline-block;
                     line-height: 30px;
                     text-indent: 42px;
-
+                   
                     &.active {
                         border-radius: 0px;
                         color: @bodytext;
@@ -2609,7 +2605,7 @@ h1 {
                             position: absolute;
                             content: '\0050';
                             left: 0;
-                            font-size: 28px;
+                            font-size: 22px;
                             color: @bodytext;
                         }
                     }
@@ -2626,7 +2622,7 @@ h1 {
                         font-family: 'Glyphter';
                         content: '\004f';
                         position: absolute;
-                        font-size: 24px;
+                        font-size: 20px;
                         left: 0;
                         text-indent: 15px;
                         display: inline-block;
@@ -2663,7 +2659,7 @@ h1 {
                             a {
                                 width: 100%;
                                 align-self: stretch;
-                                font-size: 13px;
+                                font-size: 12px;
                                 padding-left: 8px;
                                 padding-right: 8px;
                                 text-indent: 0px;
@@ -2682,8 +2678,17 @@ h1 {
                                 .badge {
                                     top: 0;
                                     right: 0 !important;
-                                    min-width: 14px !important;
-                                    left: 70% !important;
+                                   width: 14px !important;
+                                   height:14px;
+                                   min-width:unset;
+                                    left: 80% !important;
+                                    background:@white;
+                                    border-radius:50%;
+
+
+                                    .fa{
+                                        margin-right:0;
+                                    }
                                 }
 
 
@@ -2701,7 +2706,7 @@ h1 {
                                     background: @highlightcolor;
                                 }
 
-                                .icon {
+                                .icon {position:relative;
                                     text-align: center;
                                     font-size: 34px;
                                 }
@@ -2800,6 +2805,7 @@ h1 {
             text-align: center;
             line-height: 35px;
             font-size: 20px;
+           
         }
 
         &.yellow {
@@ -2833,9 +2839,13 @@ h1 {
             }
 
             .badge {
-                left: -15px;
+                left: -17px;
                 top: 5px;
                 right: unset;
+              
+                .fa{
+                    margin-right:0;
+                }
             }
 
 
@@ -2869,7 +2879,7 @@ h1 {
             }
 
             .badge {
-                left: -10px;
+                left: -15px;
                 top: 5px;
                 right: unset;
             }
@@ -3618,6 +3628,15 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: "Rubik", sans-serif;
+    display:flex;
+    align-items:center;
+
+
+
+    img{margin-top:-20px;
+max-width:50px;
+
+    }
 }
 
 .number .text {
@@ -3668,9 +3687,19 @@ h1 {
 
 
 #claims_table {
+    .icons-col {
+        width: 60px;
+
+        .icon-repudiation {
+            font-size: 14px;
+        }
+
+        .icon-missing {
+            font-size: 14px;
+        }
+    }
 
     tbody {
-       
         width: 100%;
         box-shadow: 0 0 0.875rem 0 rgba(53,64,82,.15);
         margin-bottom: 12px;
@@ -3679,8 +3708,6 @@ h1 {
         tr {
             flex-wrap: wrap;
             height: 60px;
-           
-        
         }
 
         td {
@@ -4002,5 +4029,89 @@ table.dataTable tbody th, table.dataTable tbody td{
 
         padding-left:0px;
         padding-right:0px;
+    }
+}
+
+
+.single-chart {
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background: @maincolor;
+
+    .statistic {
+        fill: @white;
+        font-size: 8px;
+        font-family: Rubik;
+    }
+
+    .statpercentage {
+        fill: @white;
+        font-size: 4px;
+        font-family: Rubik;
+    }
+}
+.second-row{
+
+    
+}
+.single-chart {
+  
+    justify-content: center;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: @bordercolor;
+    stroke-width: 1.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart .circle {
+    stroke: @secondarycolor;
+}
+
+
+
+.percentage {
+    fill:@thirdiarycolor;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+
+.second-row{
+
+
+    
+
+        h5{
+
+            font-weight:normal;
+            margin:0;
+            padding:0;
+        
     }
 }

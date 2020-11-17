@@ -3760,7 +3760,7 @@ tr.collapsible-header {
   position: fixed;
   width: 40%;
   height: 50vh;
-  right: 10%;
+  left: 90px;
 }
 .detail button {
   vertical-align: middle;

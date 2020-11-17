@@ -1391,7 +1391,7 @@ h4 {
 h3 {
   font-size: 24px;
   font-weight: 600;
-  padding: 1rem 1rem 0;
+  /*  padding: 1rem 1rem 0;*/
 }
 .card-title {
   font-size: 14px;
@@ -2373,6 +2373,9 @@ h1 small {
 }
 .icons-col {
   width: 40px;
+}
+.icons-col a {
+  display: block;
 }
 .icon-circle {
   border-radius: 50%;
@@ -3646,6 +3649,9 @@ table.dataTable tbody td {
 }
 #summary .row {
   margin-top: 10px;
+  margin-left: 10;
+  margin-right: 10;
+  margin-bottom: 20px;
 }
 #summary [class*='col-md-'] {
   padding-left: 0px;
@@ -3761,13 +3767,6 @@ tr.collapsible-header {
   width: 40%;
   height: 50vh;
   left: 90px;
-}
-.detail button {
-  vertical-align: middle;
-  opacity: .5;
-  cursor: unset;
-  background: $color_invert_chrome_tint;
-  margin-left: 1em;
 }
 @media (max-width: 610px) {
   .detail,
